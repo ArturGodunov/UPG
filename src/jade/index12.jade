@@ -1,0 +1,24 @@
+extends index11
+include includes/vars
+include includes/mixins
+
+block selectMainImg
+    .select-main_img.statistics.img_md
+    .select-main_cont.statistics
+        block cont
+            h2 СТАТИСТИКА ЗАЯВОК
+            h4.m-t-sm За период
+            form.form-select-auto.m-t-lg.clr
+                .statistics_date.clr
+                    span с
+                    +date('21.05.2015')(class='right')
+                .statistics_date.clr
+                    span.m-l по
+                    +date('12.06.2015')(class='right')
+                .right.m-t-lg
+                    .btn.btn_sm ПРИМЕНИТЬ
+            canvas#graph.graph.m-t-lg(height='200' width='570')
+
+
+block panelMain
+

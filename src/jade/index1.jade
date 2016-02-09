@@ -1,0 +1,17 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='ru')
+    include includes/blocks/head
+    body
+        .wrapper
+            block headerMst
+                include includes/blocks/header
+            block content
+                .sq-blc.sq-blc_main.m-t-sm
+                    +squareBlock(squareBlockMain)
+            block panelMain
+                +panelMain(panelMain, true)
+
+       include includes/blocks/scripts

@@ -1,0 +1,18 @@
+.header{
+  height: 43rem;
+  background: url("../images/retina/bg/header_bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 0.5rem 0 0;
+}
+
+.header_title{
+  text-shadow: 0.15rem 0.26rem 0.5rem rgba(1, 1, 1, 0.75);
+  color: #fff;
+  font: 3rem/1.6 proxima_nova_rgbold;
+  background: transparentize(#00141b, 0.5);
+  text-align: right;
+  margin: 6rem 0 0;
+  padding: 4rem 4rem 4rem 10rem;
+  float: right;
+  text-transform: uppercase;
+}

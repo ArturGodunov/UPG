@@ -1,0 +1,14 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='ru')
+    include includes/blocks/head
+    body
+        .wrapper
+            include includes/blocks/mst
+            .sq-blc.sq-blc_lc.m-t
+                block lcCont
+                    +squareBlock(squareBlockLc)
+
+        include includes/blocks/scripts

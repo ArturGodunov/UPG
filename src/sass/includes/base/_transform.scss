@@ -1,0 +1,5 @@
+@mixin transform($fun) {
+  -webkit-transform: $fun;
+  -ms-transform: $fun;
+  transform: $fun;
+}

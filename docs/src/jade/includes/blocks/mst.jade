@@ -1,0 +1,23 @@
+include ../vars
+include ../mixins
+
+block mst
+    .mst
+        a.logo(href='#' title='МСТ')
+            img.logo_img(src='images/retina/logo.png')
+        block mstCont
+            .m-t-md.m-r-lg.right
+                a.btn.btn_bg.form-popup_link(href='#form-popup').
+                    ВХОД В ЛИЧНЫЙ КАБИНЕТ
+                form#form-popup.form-popup.form-popup_lc.mfp-hide
+                    .close.close_black
+                    h2.lc-popup_title Вход в личный кабинет
+                    h4.lc-popup_title-sm Пожалуйста заполните следующие поля
+                    input.input-text.m-t-lg(type='text' placeholder='Логин')
+                    input.input-text.m-t-lg(type='password' placeholder='Пароль')
+                    .clr
+                        .left.m-t-xxl
+                            +checkbox('Запомнить меня')
+                        .right.m-t-lg
+                            .btn.btn_bg Вход
+                    h4.m-t-lg Если вы забыли свой пароль вы можете <a href='#' class="link-blue">восстановить его</a>

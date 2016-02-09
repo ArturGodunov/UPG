@@ -1,0 +1,21 @@
+extends index3
+include includes/vars
+include includes/mixins
+
+block mstCont
+    .m-t-xl.m-r-lg.right Дилер: UserName
+block headerMst
+    include includes/blocks/mst
+block closeBtn
+    .close.close_red
+block selectMainImg
+    .select-main_img.balance.img_bg
+    .select-main_cont.expert
+        block cont
+            h2 Пополнить баланс
+            form.form-select-auto.m-t-md
+                +selectSuper('Оплата онлайн', pay)(class='m-t-md')
+                +selectSuper('Выберите тариф', tarif)(class='m-t-md')
+                .right.m-t-lg
+                    .btn.btn_sm ОПЛАТИТЬ
+block panelMain

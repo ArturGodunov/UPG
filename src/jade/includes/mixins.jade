@@ -1,0 +1,124 @@
+mixin squareBlock(obj, arg)
+    ul(class=obj.className + ' list clr')
+        - for (var i=0; i < obj.arrTitle.length; i++)
+            li(class=obj.className + ' list_item')
+                a(class=obj.className + ' item_link' href='#' title=obj.arrTitle[i].toUpperCase())
+                    div(class=obj.className + ' img')
+                    div(class=obj.className + ' desc')
+                        if obj.time
+                            h4(class=obj.className + ' desc_time') 15 июля 2015
+                            h2(class=obj.className + ' desc_title')= obj.arrTitle[i]
+                        else
+                            h2(class=obj.className + ' desc_title')= obj.arrTitle[i]
+
+mixin titleContentMain(title, arg)
+    if arg
+        h4= arg
+    else
+        h4.desc_time 15 июля 2015
+    h2.desc_title= title
+
+
+mixin checkbox(label)
+    label.checkbox-square
+        .checkbox-square_b
+            input.check(type='checkbox')
+            .checkbox_img
+        = label
+
+mixin radio(label, name)
+    label.radio-super
+        .radio-super_b
+            input.radio(type='radio' name=name)
+            .radio_img
+        = label
+
+mixin radioPicture(label, name, img)
+    label.radio-picture&attributes(attributes)
+        .radio-picture_b
+            input.radio(type='radio' name=name)
+            div(class='radio_img ' + img)
+        div.label= label
+
+mixin radioLink(label, name)
+    label.radio-link&attributes(attributes)
+        .radio-link_b
+            input.radio(type='radio' name=name)
+            div.label= label
+
+mixin selectSuper(title, arr)
+    .select-super&attributes(attributes)
+        select
+            each val in arr
+                option(value=val)
+        .select_title= title
+        .option_list
+            each val in arr
+                .option_item= val
+
+mixin date(placeholder)
+    .input-date_b&attributes(attributes)
+        input.datepicker.input-date.sm(type='text' placeholder=placeholder)
+
+mixin panelMain(obj, slider, title)
+    if slider
+        .panel-main.m-t-sm
+            .panel-main_title
+                h3 В данный момент на сайте присутствуют более 1500 моделей
+            .panel-main_body.slider-main
+                ul.bxslider
+                    - for (var i=0; i < obj.arrTitle.length; i++)
+                        li.panel-main_item
+                            h3.panel-main_item-title= obj.arrTitle[i]
+                            h4.panel-main_item-title_sm= obj.arrTitleSm[i]
+                            img.panel-main_item-img(src='images/retina/panelmain_' + (i+1) + '.png')
+                            .panel-main_item-from
+                                span от
+                                span  1 890 000
+                                span.rubl  a
+                            .panel-main_item-loss
+                                div Потери в год
+                                div 364 000 <span class='rubl'>a</span>
+                            .panel-main_item-rating
+                                .rating_number 9.7
+                                .rating_stars
+                                    .star.act
+                                    .star.act
+                                    .star.act
+                                    .star.act
+                                    .star
+                            .btn.btn_sm.m-t ПОДРОБНЕЕ
+    else
+        .panel-main.m-t-sm.not-slider
+            if !title
+                .panel-main_title
+                    h3 В данный момент на сайте присутствуют более 1500 моделей
+            .panel-main_body.p-t-0
+                ul.panel-main_list
+                    - for (var i=0; i < 5; i++)
+                        li.panel-main_item
+                            ul.item_list.clr
+                                li.item_item
+                                    img.panel-main_item-img(src='images/retina/panelmain_1.png')
+                                li.item_item
+                                    h3.panel-main_item-title= obj.arrTitle[1]
+                                    h4.panel-main_item-title_sm= obj.arrTitleSm[1]
+                                    .panel-main_item-from.m-t-sm
+                                        span от
+                                        span  1 890 000
+                                        span.rubl  a
+                                    .panel-main_item-loss
+                                        div Потери в год
+                                        div 364 000 <span class='rubl'>a</span>
+                                    .panel-main_item-rating
+                                        .rating_number 9.7
+                                        .rating_stars
+                                            .star.act
+                                            .star.act
+                                            .star.act
+                                            .star.act
+                                            .star
+                                li.item_item.font-bold
+                                    .circle-diagram(data-circle-diagram='{"percent": "' + circleDiagram[i] + '%"}')
+                                li.item_item
+                                    .btn.btn_bg.btn_bg-shot ПОДРОБНЕЕ
