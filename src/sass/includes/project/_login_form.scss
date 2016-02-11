@@ -1,0 +1,110 @@
+.login_aside{
+  width: 530px;
+  float: left;
+  padding: 100px 110px 0;
+  height: 100%;
+  box-shadow: 10px 0 20px rgba(0,0,0,0.5);
+}
+.login_aside_title{
+  color: #373737;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+
+.login_form{
+
+  .form_text{
+    color: #ffb600;
+    line-height: 1.33;
+  }
+
+  .form_input_group{
+    margin-top: 15px;
+    & + .form_input_group{
+      margin-top: 30px;
+    }
+    &.correct{
+      position: relative;
+      &:before{
+        content: 'Please fill the form correctly  ';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        font-size: 11px;
+      }
+    }
+    &.form_input_group__checkbox{
+      margin-top: 40px;
+    }
+  }
+
+  .form_input{
+    line-height: 56px;
+    padding: 0 15px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .checkbox{
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    line-height: 1.8;
+  }
+  .checkbox_b{
+    float: right;
+  }
+  .checkbox_check{
+    position: absolute;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    &:checked + .checkbox_img{
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAy0lEQVRYR+2W0Q2AIAwFcSEdykHUQRxKF8I0hqQI1hba+FM+TeCORysMMcYYfhyDC3gCnoB1Avu5hf1Ys0afxyXM0/3NtA2/4KYCHLiZABduIiCBqwtI4aoCLXA1gVZ4JgC9CgvhAb0KPUuNHniRgFSiF149Aq6EBvy1Br4ktOBkEb5JwCTq3y593ZF3QU3iCcAXixTOakNKohfOEkiRFy2KrtSWnac57OsYJ6Gxc7EALr70mOjZeZOABvC5BvsILODsIrSCu4AnAAlcjygDsHjPMQ0AAAAASUVORK5CYII=")no-repeat;
+      background-size: cover;
+    }
+  }
+  .checkbox_img{
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    margin-left: 10px;
+  }
+
+  .form_button{
+    width: 100%;
+    border: 2px solid #fff;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-family: open_sansbold, sans-serif;
+    cursor: pointer;
+  }
+
+  .form_link{
+    float: right;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .hover,
+  .focus{
+    transition: .4s;
+    box-shadow: 0 0 10px 1px rgba(255,182,0,0);
+    &:hover,
+    &:focus{
+      box-shadow: 0 0 10px 1px rgba(255,182,0,0.5);
+    }
+    &.hover__checkbox{
+      box-shadow: none;
+      &:hover .checkbox_img{
+        box-shadow: 0 0 10px 1px rgba(255,182,0,0.5);
+      }
+    }
+  }
+}
+

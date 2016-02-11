@@ -10,18 +10,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'dist/index.html': 'src/jade/index.jade',
-                    'dist/index1.html': 'src/jade/index1.jade',
-                    //'dist/index2.html': 'src/jade/index2.jade',
-                    //'dist/index3.html': 'src/jade/index3.jade',
-                    //'dist/index4.html': 'src/jade/index4.jade',
-                    //'dist/index5.html': 'src/jade/index5.jade',
-                    //'dist/index6.html': 'src/jade/index6.jade',
-                    //'dist/index7.html': 'src/jade/index7.jade',
-                    //'dist/index8.html': 'src/jade/index8.jade',
-                    //'dist/index9.html': 'src/jade/index9.jade',
-                    //'dist/index10.html': 'src/jade/index10.jade',
-                    //'dist/index11.html': 'src/jade/index11.jade',
-                    //'dist/index12.html': 'src/jade/index12.jade'
+                    'dist/index1.html': 'src/jade/index1.jade'
 				}
 			}
 		},

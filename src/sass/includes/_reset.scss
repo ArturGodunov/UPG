@@ -49,6 +49,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 *{
 	box-sizing: border-box;
 }
+input{
+  border: none;
+}
 input[type=text]:focus,
 input[type=password],
 select, option,
@@ -87,3 +90,10 @@ button[disabled]{
 textarea{
   resize: none;
 }
+//a, a:visited, a:link {
+//  text-decoration: none;
+//  color: $textColor;
+//}
+//a:active{
+//  color: $colorPanelMainTitle;
+//}

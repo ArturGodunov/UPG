@@ -1,0 +1,301 @@
+/*
+* RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+}
+
+input[type=text]:focus,
+input[type=password],
+select, option,
+textarea,
+a {
+  outline: none;
+}
+
+button, input[type=submit] {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+}
+
+audio:not([controls]), [hidden] {
+  display: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+  overflow: visible;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  overflow: visible;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+textarea {
+  resize: none;
+}
+
+/*
+* BASE
+*/
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+
+body {
+  font: 18px/1 open_sansregular, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background: #777d7f;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+  overflow-x: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clr::before, .clr::after {
+  content: " ";
+  display: table;
+}
+.clr::after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*
+* PROJECT
+*/
+.login_aside {
+  width: 530px;
+  float: left;
+  padding: 100px 110px 0;
+  height: 100%;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.login_aside_title {
+  color: #373737;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.login_form .form_text {
+  color: #ffb600;
+  line-height: 1.33;
+}
+.login_form .form_input_group {
+  margin-top: 15px;
+}
+.login_form .form_input_group + .form_input_group {
+  margin-top: 30px;
+}
+.login_form .form_input_group.correct {
+  position: relative;
+}
+.login_form .form_input_group.correct:before {
+  content: 'Please fill the form correctly  ';
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  font-size: 11px;
+}
+.login_form .form_input_group.form_input_group__checkbox {
+  margin-top: 40px;
+}
+.login_form .form_input {
+  line-height: 56px;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 18px;
+}
+.login_form .checkbox {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  line-height: 1.8;
+}
+.login_form .checkbox_b {
+  float: right;
+}
+.login_form .checkbox_check {
+  position: absolute;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+}
+.login_form .checkbox_check:checked + .checkbox_img {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAy0lEQVRYR+2W0Q2AIAwFcSEdykHUQRxKF8I0hqQI1hba+FM+TeCORysMMcYYfhyDC3gCnoB1Avu5hf1Ys0afxyXM0/3NtA2/4KYCHLiZABduIiCBqwtI4aoCLXA1gVZ4JgC9CgvhAb0KPUuNHniRgFSiF149Aq6EBvy1Br4ktOBkEb5JwCTq3y593ZF3QU3iCcAXixTOakNKohfOEkiRFy2KrtSWnac57OsYJ6Gxc7EALr70mOjZeZOABvC5BvsILODsIrSCu4AnAAlcjygDsHjPMQ0AAAAASUVORK5CYII=") no-repeat;
+  background-size: cover;
+}
+.login_form .checkbox_img {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  margin-left: 10px;
+}
+.login_form .form_button {
+  width: 100%;
+  border: 2px solid #fff;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-family: open_sansbold, sans-serif;
+  cursor: pointer;
+}
+.login_form .form_link {
+  float: right;
+}
+.login_form .form_link:hover {
+  text-decoration: none;
+}
+.login_form .hover,
+.login_form .focus {
+  transition: .4s;
+  box-shadow: 0 0 10px 1px rgba(255, 182, 0, 0);
+}
+.login_form .hover:hover, .login_form .hover:focus,
+.login_form .focus:hover,
+.login_form .focus:focus {
+  box-shadow: 0 0 10px 1px rgba(255, 182, 0, 0.5);
+}
+.login_form .hover.hover__checkbox,
+.login_form .focus.hover__checkbox {
+  box-shadow: none;
+}
+.login_form .hover.hover__checkbox:hover .checkbox_img,
+.login_form .focus.hover__checkbox:hover .checkbox_img {
+  box-shadow: 0 0 10px 1px rgba(255, 182, 0, 0.5);
+}
+
+.login_main {
+  background: url("../images/bg/bg-login.jpg") no-repeat 50%;
+  background-size: cover;
+  margin-left: 530px;
+  height: 100%;
+}
+
+.login_main_title {
+  color: #fff;
+  font-size: 54px;
+  font-family: open_sansbold, sans-serif;
+  text-transform: uppercase;
+}
+.login_main_title .small {
+  color: #373737;
+  font-size: 30px;
+}
+
+/*
+* COSMETIC
+*/

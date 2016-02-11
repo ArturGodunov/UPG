@@ -6,23 +6,17 @@
 /*
 * BASE
 */
+@import "includes/base/fonts";
 @import "includes/base/vars";
 @import "includes/base/transform";
 @import "includes/base/transition";
 @import "includes/base/base";
-@import "includes/base/fonts";
 
 /*
 * PROJECT
 */
-@import "includes/project/header";
-@import "includes/project/mst";
-@import "includes/project/squareBlock";
-@import "includes/project/panelMain";
-@import "includes/project/formPopupLc";
-@import "includes/project/news";
-@import "includes/project/brand";
-@import "includes/project/datepicker";
+@import "includes/project/login_form";
+@import "includes/project/login_main";
 
 /*
 * COSMETIC
