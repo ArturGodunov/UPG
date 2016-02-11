@@ -1,0 +1,16 @@
+extends index1
+include includes/vars
+include includes/mixins
+
+block login
+    aside.login_aside
+        h2.login_aside_title Login
+        form.login_form.clr
+            .form_text Please enter your valid email address below
+            .form_input_group.correct
+                input.form_input.focus(type='text' placeholder='Email address' title='Email address')
+            .form_input_group
+                button.form_button.hover(title='Request new password') Request new password
+            .form_input_group
+                a.form_link.form_text(href='index2.html' title='Back to Log in') Back to Log in
+        img.logo(src='images/logo_black.png' alt='Unified Payment Gateway')

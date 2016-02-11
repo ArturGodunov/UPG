@@ -9,27 +9,28 @@ html(lang='en')
         block login
             aside.login_aside
                 h2.login_aside_title Login
-                form.login_form
+                form.login_form.clr
                     .form_text Please enter your log in and password
                     .form_input_group.correct
-                        input.form_input.focus(type='text' placeholder='Log in')
+                        input.form_input.focus(type='text' placeholder='Log in' title='Log in')
                     .form_input_group.correct
-                        input.form_input.focus(type='text' placeholder='Password')
+                        input.form_input.focus(type='text' placeholder='Password' title='Password')
                     .form_input_group.form_input_group__checkbox
-                        label.checkbox.form_text.hover.hover__checkbox
+                        label.checkbox.form_text.hover.hover__checkbox(title='Remember me')
                             .checkbox_b
                                 input.checkbox_check(type='checkbox')
                                 .checkbox_img
                             | Remember me
                     .form_input_group
-                        button.form_button.hover Sign in
+                        button.form_button.hover(title='Sign in') Sign in
                     .form_input_group
                         a.form_link.form_text(href='index2.html' title='Forgot your password?') Forgot your password
+                img.logo(src='images/logo_black.png' alt='Unified Payment Gateway')
 
         section.login_main
+            img.logo(src='images/logo_white.png' alt='Unified Payment Gateway')
             h1.login_main_title
-                img.logo(src='images/logo_white.png' alt='Unified Payment Gateway')
-                | Unified Payment Gateway
+                | Unified Payment Gateway<br>
                 span.small Welcome to the UPG! Exclusive solutions your business!
 
        include includes/blocks/scripts

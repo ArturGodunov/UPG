@@ -1,13 +1,19 @@
 .login_aside{
   width: 530px;
   float: left;
-  padding: 100px 110px 0;
-  height: 100%;
+  //padding: 80px 110px;
+  padding: 8vh 110px;
+  min-height: 100%;
   box-shadow: 10px 0 20px rgba(0,0,0,0.5);
+  .logo{
+    display: block;
+    //margin: 77% auto 0;
+    margin: 23vh auto 0;
+  }
 }
 .login_aside_title{
   color: #373737;
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 50px;
 }
 

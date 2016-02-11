@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'dist/index.html': 'src/jade/index.jade',
-                    'dist/index1.html': 'src/jade/index1.jade'
+                    'dist/index1.html': 'src/jade/index1.jade',
+                    'dist/index2.html': 'src/jade/index2.jade'
 				}
 			}
 		},
