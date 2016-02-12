@@ -21,7 +21,7 @@
 @media (max-width: 1500px) {
   .login_main{
     background-image: url("../images/bg/bg-login__small.jpg");
-    background-size: contain;
+    //background-size: contain;
   }
 }
 @media (max-width: 1300px) {
@@ -32,7 +32,6 @@
 @media (max-width: 1024px) {
   .login_main{
     background-image: url("../images/bg/bg-login__ipad.jpg");
-    background-size: cover;
   }
 }
 .login_main_title{
