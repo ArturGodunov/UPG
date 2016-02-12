@@ -149,6 +149,7 @@ body {
   margin: 0 auto;
   max-width: 1024px;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 .text-center {
@@ -175,32 +176,51 @@ body {
 * PROJECT
 */
 .login_aside {
-  width: 530px;
+  position: relative;
+  width: 28%;
   float: left;
-  padding: 8vh 110px;
+  padding: 8vh 6% 0;
   min-height: 100%;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
 }
 .login_aside .logo {
-  display: block;
-  margin: 23vh auto 0;
+  position: absolute;
+  bottom: 8vh;
+  left: 50%;
+  width: 56%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
+@media (max-width: 1300px) {
+  .login_aside {
+    width: 370px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
 .login_aside_title {
   color: #373737;
-  font-size: 46px;
-  margin-bottom: 50px;
+  font-size: 2.4vw;
+  margin-bottom: 16%;
 }
 
+@media (max-width: 1300px) {
+  .login_aside_title {
+    font-size: 32px;
+  }
+}
 .login_form .form_text {
   color: #ffb600;
+  font-size: 0.94vw;
   line-height: 1.33;
 }
 .login_form .form_input_group {
-  margin-top: 15px;
+  margin-top: 5%;
 }
 .login_form .form_input_group + .form_input_group {
-  margin-top: 30px;
+  margin-top: 10%;
 }
 .login_form .form_input_group.correct {
   position: relative;
@@ -209,18 +229,33 @@ body {
   content: 'Please fill the form correctly  ';
   display: block;
   position: absolute;
-  bottom: -15px;
+  bottom: -1.4em;
   left: 0;
   font-size: 11px;
 }
 .login_form .form_input_group.form_input_group__checkbox {
-  margin-top: 40px;
+  margin-top: 13%;
+}
+@media (max-width: 1600px) {
+  .login_form .form_input_group.correct:before {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1300px) {
+  .login_form .form_text {
+    font-size: 13px;
+  }
 }
 .login_form .form_input {
-  line-height: 56px;
-  padding: 0 15px;
+  padding: 0 5%;
   width: 100%;
   font-size: 18px;
+  line-height: 3.1;
+}
+@media (max-width: 1600px) {
+  .login_form .form_input {
+    font-size: 13px;
+  }
 }
 .login_form .checkbox {
   display: block;
@@ -247,15 +282,26 @@ body {
   background: #fff;
   margin-left: 10px;
 }
+@media (max-width: 1600px) {
+  .login_form .checkbox_img {
+    width: 24px;
+    height: 24px;
+  }
+}
 .login_form .form_button {
   width: 100%;
   border: 2px solid #fff;
-  line-height: 48px;
   text-align: center;
   color: #fff;
   font-size: 22px;
+  line-height: 2.2;
   font-family: open_sansbold, sans-serif;
   cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .login_form .form_button {
+    font-size: 16px;
+  }
 }
 .login_form .form_link {
   float: right;
@@ -283,42 +329,76 @@ body {
 }
 
 .login_main {
-  background: url("../images/bg/bg-login.jpg") no-repeat 50%;
+  background-image: url("../images/bg/bg-login.jpg");
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 530px;
+  margin-left: 28%;
   min-height: 100%;
   padding-top: 40px;
 }
 .login_main .logo {
   float: left;
-  margin: 0 25px 40px 80px;
+  margin: 0 2% 40px 6%;
+  width: 16%;
 }
 
+@media (min-width: 1920px) {
+  .login_main {
+    background-image: url("../images/bg/bg-login__big.jpg");
+  }
+}
+@media (max-width: 1500px) {
+  .login_main {
+    background-image: url("../images/bg/bg-login__small.jpg");
+    background-size: contain;
+  }
+}
+@media (max-width: 1300px) {
+  .login_main {
+    margin-left: 370px;
+  }
+}
+@media (max-width: 1024px) {
+  .login_main {
+    background-image: url("../images/bg/bg-login__ipad.jpg");
+  }
+}
 .login_main_title {
   color: #fff;
-  font-size: 54px;
+  font-size: 2.8vw;
   font-family: open_sansbold, sans-serif;
   text-transform: uppercase;
-  margin: 16px 0 0 80px;
+  margin: 1% 0 0 6%;
   position: relative;
 }
 .login_main_title:before {
   content: '';
   display: block;
   position: absolute;
-  top: 62px;
+  top: 57%;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 0.2vw;
   background: #ffb600;
 }
 .login_main_title .small {
   color: #373737;
-  font-size: 30px;
+  font-size: 1.56vw;
   font-family: open_sansregular, sans-serif;
   text-transform: none;
 }
 
+@media (max-width: 1700px) {
+  .login_main_title {
+    margin-top: 0.5%;
+  }
+}
+@media (max-width: 1300px) {
+  .login_main_title {
+    margin-top: 0.3%;
+  }
+}
 /*
 * COSMETIC
 */

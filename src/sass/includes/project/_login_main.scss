@@ -1,35 +1,73 @@
 .login_main{
-  background: url("../images/bg/bg-login.jpg")no-repeat 50%;
+  background-image: url("../images/bg/bg-login.jpg");
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 530px;
+  //margin-left: 530px;
+  margin-left: 28%;
   min-height: 100%;
   padding-top: 40px;
   .logo{
     float: left;
-    margin: 0 25px 40px 80px;
+    margin: 0 2% 40px 6%;
+    width: 16%;
+  }
+}
+@media (min-width: 1920px) {
+  .login_main{
+    background-image: url("../images/bg/bg-login__big.jpg");
+  }
+}
+@media (max-width: 1500px) {
+  .login_main{
+    background-image: url("../images/bg/bg-login__small.jpg");
+    background-size: contain;
+  }
+}
+@media (max-width: 1300px) {
+  .login_main{
+    margin-left: 370px;
+  }
+}
+@media (max-width: 1024px) {
+  .login_main{
+    background-image: url("../images/bg/bg-login__ipad.jpg");
   }
 }
 .login_main_title{
   color: #fff;
-  font-size: 54px;
+  //font-size: 54px;
+  font-size: 2.8vw;
   font-family: open_sansbold, sans-serif;
   text-transform: uppercase;
-  margin: 16px 0 0 80px;
+  margin: 1% 0 0 6%;
   position: relative;
   &:before{
     content: '';
     display: block;
     position: absolute;
-    top: 62px;
+    top: 57%;
     left: 0;
     width: 100%;
-    height: 4px;
+    //height: 4px;
+    height: 0.2vw;
     background: #ffb600;
   }
   .small{
     color: #373737;
-    font-size: 30px;
+    //font-size: 30px;
+    font-size: 1.56vw;
     font-family: open_sansregular, sans-serif;
     text-transform: none;
+  }
+}
+@media (max-width: 1700px) {
+  .login_main_title{
+    margin-top: 0.5%;
+  }
+}
+@media (max-width: 1300px) {
+  .login_main_title{
+    margin-top: 0.3%;
   }
 }

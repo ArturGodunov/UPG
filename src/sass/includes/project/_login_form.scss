@@ -1,20 +1,38 @@
 .login_aside{
-  width: 530px;
+  position: relative;
+  //width: 530px;
+  width: 28%;
   float: left;
-  //padding: 80px 110px;
-  padding: 8vh 110px;
+  //padding: 8vh 110px 0;
+  padding: 8vh 6% 0;
   min-height: 100%;
   box-shadow: 10px 0 20px rgba(0,0,0,0.5);
   .logo{
-    display: block;
-    //margin: 77% auto 0;
-    margin: 23vh auto 0;
+    position: absolute;
+    bottom: 8vh;
+    left: 50%;
+    width: 56%;
+    @include transform(translateX(-50%));
+  }
+}
+@media (max-width: 1300px) {
+  .login_aside{
+    width: 370px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 .login_aside_title{
   color: #373737;
-  font-size: 46px;
-  margin-bottom: 50px;
+  //font-size: 46px;
+  font-size: 2.4vw;
+  //margin-bottom: 50px;
+  margin-bottom: 16%;
+}
+@media (max-width: 1300px) {
+  .login_aside_title{
+    font-size: 32px;
+  }
 }
 
 
@@ -22,13 +40,17 @@
 
   .form_text{
     color: #ffb600;
+    //font-size: 18px;
+    font-size: 0.94vw;
     line-height: 1.33;
   }
 
   .form_input_group{
-    margin-top: 15px;
+    //margin-top: 15px;
+    margin-top: 5%;
     & + .form_input_group{
-      margin-top: 30px;
+      //margin-top: 30px;
+      margin-top: 10%;
     }
     &.correct{
       position: relative;
@@ -36,21 +58,44 @@
         content: 'Please fill the form correctly  ';
         display: block;
         position: absolute;
-        bottom: -15px;
+        //bottom: -15px;
+        bottom: -1.4em;
         left: 0;
         font-size: 11px;
       }
     }
     &.form_input_group__checkbox{
-      margin-top: 40px;
+      //margin-top: 40px;
+      margin-top: 13%;
+    }
+  }
+  @media (max-width: 1600px) {
+    .form_input_group{
+      &.correct{
+        &:before{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    .form_text{
+      font-size: 13px;
     }
   }
 
   .form_input{
-    line-height: 56px;
-    padding: 0 15px;
+    //line-height: 56px;
+    //padding: 0 15px;
+    padding: 0 5%;
     width: 100%;
     font-size: 18px;
+    line-height: 3.1;
+  }
+  @media (max-width: 1600px) {
+    .form_input{
+      font-size: 13px;
+    }
   }
 
   .checkbox{
@@ -78,16 +123,28 @@
     background: #fff;
     margin-left: 10px;
   }
+  @media (max-width: 1600px) {
+    .checkbox_img {
+      width: 24px;
+      height: 24px;
+    }
+  }
 
   .form_button{
     width: 100%;
     border: 2px solid #fff;
-    line-height: 48px;
+    //line-height: 48px;
     text-align: center;
     color: #fff;
     font-size: 22px;
+    line-height: 2.2;
     font-family: open_sansbold, sans-serif;
     cursor: pointer;
+  }
+  @media (max-width: 1600px) {
+    .form_button{
+      font-size: 16px;
+    }
   }
 
   .form_link{
@@ -113,4 +170,5 @@
     }
   }
 }
+
 
