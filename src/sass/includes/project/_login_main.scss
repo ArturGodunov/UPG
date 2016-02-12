@@ -32,6 +32,7 @@
 @media (max-width: 1024px) {
   .login_main{
     background-image: url("../images/bg/bg-login__ipad.jpg");
+    background-size: cover;
   }
 }
 .login_main_title{
@@ -42,6 +43,7 @@
   text-transform: uppercase;
   margin: 1% 0 0 6%;
   position: relative;
+  white-space: nowrap;
   &:before{
     content: '';
     display: block;

@@ -64,6 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 input {
   border: none;
+  border-radius: 0;
 }
 
 input[type=text]:focus,
@@ -94,6 +95,7 @@ button {
   -webkit-appearance: button;
   cursor: pointer;
   overflow: visible;
+  padding: 0;
 }
 
 input[type=button], input[type=reset], input[type=submit] {
@@ -362,6 +364,7 @@ body {
 @media (max-width: 1024px) {
   .login_main {
     background-image: url("../images/bg/bg-login__ipad.jpg");
+    background-size: cover;
   }
 }
 .login_main_title {
@@ -371,6 +374,7 @@ body {
   text-transform: uppercase;
   margin: 1% 0 0 6%;
   position: relative;
+  white-space: nowrap;
 }
 .login_main_title:before {
   content: '';
