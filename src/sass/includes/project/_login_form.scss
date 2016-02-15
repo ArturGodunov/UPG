@@ -45,10 +45,10 @@
     line-height: 1.33;
   }
 
-  .form_input_group{
+  .form_group{
     //margin-top: 15px;
     margin-top: 5%;
-    & + .form_input_group{
+    & + .form_group{
       //margin-top: 30px;
       margin-top: 10%;
     }
@@ -64,13 +64,13 @@
         font-size: 11px;
       }
     }
-    &.form_input_group__checkbox{
+    &.form_group__checkbox{
       //margin-top: 40px;
       margin-top: 13%;
     }
   }
   @media (max-width: 1600px) {
-    .form_input_group{
+    .form_group{
       &.correct{
         &:before{
           font-size: 8px;
@@ -90,7 +90,7 @@
     padding: 0 5%;
     width: 100%;
     font-size: 18px;
-    line-height: 3.1;
+    height: 3.1em;
   }
   @media (max-width: 1600px) {
     .form_input{
