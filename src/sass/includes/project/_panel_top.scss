@@ -5,6 +5,7 @@
   background: #bdc6c9;
   position: relative;
   padding: 18px 0 10px;
+  z-index: 2;
   &:before{
     content: '';
     display: block;

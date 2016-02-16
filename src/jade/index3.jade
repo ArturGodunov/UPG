@@ -28,23 +28,32 @@ html(lang='en')
                 h4.panel_subtitle Rules Parametres
 
             section.rules
-                table
-                    thead
-                        tr
-                            th rule
-                            th name
-                            th date
-                            th actions
-                    tbody
-                        tr
-                            td 1
-                            td Best Profit
-                            td 6/18/2015
-                            td oko
-                        tr
-                            td 2
-                            td Qweee Asdfff
-                            td 26/18/2015
-                            td oko
+                .rules_head.clr
+                    .rules_col
+                        .rules_head_text.rules_head_text__title RULE
+                        .rules_head_text.rules_head_text__subtitle Status/Number
+                    .rules_col
+                        .rules_head_text.rules_head_text__title Name
+                        .rules_head_text.rules_head_text__subtitle Rule tittle/Creator
+                    .rules_col
+                        .rules_head_text.rules_head_text__title date
+                        .rules_head_text.rules_head_text__subtitle Modified
+                    .rules_col
+                        .rules_head_text.rules_head_text__title actions
+                        .rules_head_text.rules_head_text__subtitle View
+                .rules_body
+                    - for (var i=0; i < 10; i++)
+                        .rules_row(class= i == 0 ? 'active' : '')
+                            .rules_col
+                                .rules_body_text.rules_body_text__number 1
+                            .rules_col
+                                .rules_body_text.rules_body_text__title Best Profit
+                                .rules_body_text Patrick Black
+                            .rules_col
+                                .rules_body_text 6/18/2015
+                                .rules_body_text 12:01:10 PM
+                            .rules_col
+                                .rules_review
+
 
     include includes/blocks/scripts
