@@ -6,9 +6,10 @@ html(lang='en')
     include includes/blocks/head
     body
 
-        block login
-            aside.login_aside
-                h2.login_aside_title Login
+        aside.login_aside
+            h2.login_aside_title Login
+
+            block login_form
                 form.login_form.clr
                     .form_text Please enter your log in and password
                     .form_group.correct
@@ -25,10 +26,11 @@ html(lang='en')
                         button.form_button.hover(title='Sign in') Sign in
                     .form_group
                         a.form_link.form_text(href='index2.html' title='Forgot your password?') Forgot your password
-                img.logo(src='images/logo_black.png' alt='Unified Payment Gateway')
+
+            img.logo_aside(src='images/logo_black.png' alt='Unified Payment Gateway')
 
         section.login_main
-            img.logo(src='images/logo_white.png' alt='Unified Payment Gateway')
+            img.logo_main(src='images/logo_white.png' alt='Unified Payment Gateway')
             h1.login_main_title
                 | Unified Payment Gateway<br>
                 span.small Welcome to the UPG! Exclusive solutions your business!

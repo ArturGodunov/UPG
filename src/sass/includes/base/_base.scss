@@ -8,12 +8,13 @@ body{
   font-weight: 400;
   background: $colorBodyBg;
   height: 100%;
+  overflow-x: hidden;
 }
 .wrapper {
   margin: 0 auto;
   max-width: $baseWidth;
-  overflow-x: hidden;
   min-height: 100%;
+  padding: 0 15px;
 }
 
 .text-center{

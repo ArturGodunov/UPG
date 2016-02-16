@@ -1,24 +1,38 @@
-/*
-* RESET
-*/
+/*****************************************************************************
+*
+*                                   RESET
+*
+*****************************************************************************/
 @import "includes/reset";
 
-/*
-* BASE
-*/
+
+/*****************************************************************************
+*
+*                                   BASE
+*
+*****************************************************************************/
 @import "includes/base/fonts";
 @import "includes/base/vars";
 @import "includes/base/transform";
 @import "includes/base/transition";
 @import "includes/base/base";
 
-/*
-* PROJECT
-*/
+
+/*****************************************************************************
+*
+*                                   PROJECT
+*
+*****************************************************************************/
 @import "includes/project/login_form";
 @import "includes/project/login_main";
+@import "includes/project/header";
+@import "includes/project/panel_top";
+@import "includes/project/ruls";
 
-/*
-* COSMETIC
-*/
+
+/*****************************************************************************
+*
+*                                   COSMETIC
+*
+*****************************************************************************/
 @import "includes/cosmetic/cosmetic";

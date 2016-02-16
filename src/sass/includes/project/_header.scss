@@ -1,3 +1,88 @@
+/*
+** HEADER
+*/
 .header{
+  position: relative;
+}
+.logo_link{
+  display: inline-block;
+  margin: 15px 0 0 15px;
+}
+.logo{
 
 }
+
+.header_top{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  vertical-align: top;
+  .greeting{
+    display: inline-block;
+    color: #ffb600;
+    background: #656b6d;
+    padding: 8px 40px 2px;
+    text-align: center;
+    position: relative;
+    &:before,
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: 50%;
+      height: 15px;
+      margin-top: -3%;
+      background: #656b6d;
+      z-index: -1;
+    }
+    &:before{
+      left: 0;
+      @include transform(skew(0deg, 6deg));
+    }
+    &:after{
+      right: 0;
+      @include transform(skew(0deg, -6deg));
+    }
+  }
+  .log_off{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+    margin: 8px 0 0 20px;
+    &:hover{
+      color: #ffb600;
+    }
+  }
+}
+
+.menu{
+  float: right;
+  margin-top: 40px;
+}
+.menu_list{
+
+}
+.menu_item{
+  float: left;
+}
+.menu_link{
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 3em;
+  background: rgba(255,255,255,0);
+  transition: .3s;
+  &.active,
+  &:hover{
+    background: rgba(255,255,255,0.1);
+  }
+}
+/*
+** END HEADER
+*/

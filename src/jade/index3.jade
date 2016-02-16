@@ -1,0 +1,50 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body
+
+        .wrapper
+            header.header.clr
+                a.logo_link(href='/')
+                    img.logo(src='images/black_logo__small.png' alt='Unified Payment Gateway')
+                .header_top
+                    .greeting Hello, <span class="greeting_name">Admin</span>!
+                    a.log_off(href='index1.html' title='Log off') Log off
+                nav.menu
+                    ul.menu_list
+                        each val, index in ['Rules','Processors','Transactions','Reports','Logs','Users','Configuration','License']
+                            li.menu_item
+                                if index == 0
+                                    a.menu_link.active(href='/' title=val)= val
+                                else
+                                    a.menu_link(href='/' title=val)= val
+
+            section.panel_top
+                button.panel_button.panel_button__light.right Create New Rule
+                h2.panel_title.panel_title__light Processor Selection
+                h4.panel_subtitle Rules Parametres
+
+            section.rules
+                table
+                    thead
+                        tr
+                            th rule
+                            th name
+                            th date
+                            th actions
+                    tbody
+                        tr
+                            td 1
+                            td Best Profit
+                            td 6/18/2015
+                            td oko
+                        tr
+                            td 2
+                            td Qweee Asdfff
+                            td 26/18/2015
+                            td oko
+
+    include includes/blocks/scripts
