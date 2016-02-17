@@ -21,7 +21,8 @@
   display: inline-block;
   font-size: 14px;
   font-family: open_sanssemibold, sans-serif;
-  text-transform: capitalize;
+  color: #5d5d5d;
+  font-variant: small-caps;
   margin: 0.8em 0 0 3.3em;
   position: relative;
   &:before,
@@ -38,29 +39,12 @@
   &:before{
     right: 50%;
     @include transform(skew(0deg, 45deg));
-    box-shadow: 2px 6px 3px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 5px 3px -1px rgba(0, 0, 0, 0.4)
   }
   &:after{
     left: 50%;
     @include transform(skew(0deg, -45deg));
-    box-shadow: 1px 8px 3px -2px rgba(0, 0, 0, 0.4);
-  }
-}
-
-.panel_button{
-  display: inline-block;
-  float: right;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 14px;
-  font-family: open_sanssemibold, sans-serif;
-  padding: 0 15px;
-  line-height: 2.8em;
-  &.panel_button__light{
-    background: rgba(255,182,0,1);
-  }
-  &.panel_button__dark{
-    background: rgba(119,125,127,1);
+    box-shadow: 0px 6px 3px -1px rgba(0, 0, 0, 0.4)
   }
 }
 /*

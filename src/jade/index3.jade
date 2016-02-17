@@ -17,14 +17,11 @@ html(lang='en')
                     ul.menu_list
                         each val, i in ['Rules','Processors','Transactions','Reports','Logs','Users','Configuration','License']
                             li.menu_item
-                                if i == 0
-                                    a.menu_link.active(href='/' title=val)= val
-                                else
-                                    a.menu_link(href='/' title=val)= val
+                                a.menu_link(class= i == 0 ? 'active' : '')(href='/' title=val)= val
 
         section.panel_top
             .wrapper
-                button.panel_button.panel_button__light.button_hover_active Create New Rule
+                button.button.button__big.button__yellow.right Create New Rule
                 h2.panel_title.panel_title__light Processor Selection
                 h4.panel_subtitle Rules Parametres
 
@@ -39,7 +36,7 @@ html(lang='en')
                 - for (var i=0; i < 10; i++)
                     .rules_row
                         .wrapper.wrapper__half_left
-                            .rules_button.button_hover_active(class= i == 0 ? 'active' : '')
+                            .rules_button.button_activation(class= i == 0 ? 'active' : '')
                                 .rules_col
                                     .rules_body_text.rules_body_text__number 1
                                 .rules_col
@@ -54,21 +51,21 @@ html(lang='en')
         section.rules_description.col-6
             .wrapper.wrapper__half_right.clr
                 h2.rules_title Rule #1
-                button.rules_options.rules_options__edit.button_hover_active Edit
-                button.rules_options.rules_options__delete.button_hover_active Delete
+                button.button.button__small.button__yellow.button__edit Edit
+                button.button.button__small.button__red.button__delete.m-l-sm Delete
 
-                h5.rules_description_title Rule Name
+                h5.rules_subtitle Rule Name
                 .rules_name Best Profit
-                .rules_status.right
-                    .rules_status_text Active<br>Status
-                    button.rules_activation.button_hover_active on
-                    button.rules_activation.disabled.button_hover_active off
+                .right
+                    .rules_status Active<br>Status
+                    button.button.button__small.button__yellow.m-r-n-inlblc on
+                    button.button.button__small.button__grey.button__disabled off
 
-                h5.rules_description_title Creator Name
+                h5.rules_subtitle Creator Name
                 .rules_creator Patrick Blacknight
-                .rules_description_text.right patrickblacknight@gmail.com
+                .right patrickblacknight@gmail.com
 
-                h5.rules_description_title Description
+                h5.rules_subtitle Description
                 .rules_description_text.
                     Description text description text description text description text description text description
                     text ext description text description text description text description text description text
@@ -76,25 +73,25 @@ html(lang='en')
                     description text description text description text description text description text description
                     text description text
 
-                h5.rules_description_title.text-upper Payment Processors
+                h5.rules_subtitle.text-upper Payment Processors
                 .rules_payment_wrap
                     .rules_payment.rules_payment__available
                         .rules_payment_title Available
                         ul.rules_payment_list
                             - for (var i=0; i < 12; i++)
-                                li.rules_payment_item.checked.button_hover_active Authorize.net
+                                li.rules_payment_item.checked.button_activation Authorize.net
                     .rules_payment_arrow.rules_payment_arrow__right
                     .rules_payment_arrow.rules_payment_arrow__left
                     .rules_payment.rules_payment__assigned
                         .rules_payment_title Assigned
                         ul.rules_payment_list.rules_payment_list__numeric
                             - for (var i=0; i < 13; i++)
-                                li.rules_payment_item.button_hover_active(class= i == 0 ? 'active' : '') Authorize.net
+                                li.rules_payment_item.button_activation(class= i == 0 ? 'active' : '') Authorize.net
                                     .arrow.arrow__up
                                     .arrow.arrow__down
                 .right.m-t.m-b-xl
-                    button.rules_payment_button.rules_payment_button__cancel.button_hover_active cancel
-                    button.rules_payment_button.rules_payment_button__safe.button_hover_active safe
+                    button.button.button__middle.button__transparent cancel
+                    button.button.button__middle.button__yellow.m-l-sm safe
 
 
 

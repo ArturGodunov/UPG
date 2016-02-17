@@ -1,5 +1,7 @@
 @import "vars";
-
+/*
+** COMMON
+*/
 html{
   height: 100%;
 }
@@ -9,6 +11,17 @@ body{
   background: $colorBodyBg;
   height: 100%;
   overflow-x: hidden;
+  position: relative;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 76px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
 }
 .wrapper {
   margin-left: auto;
@@ -17,17 +30,15 @@ body{
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  &.wrapper__half_left,
-  &.wrapper__half_right{
-    max-width: $baseWidth / 2;
-  }
   &.wrapper__half_left{
     margin-right: 0;
     padding-right: 0;
+    max-width: calc(#{$baseWidthHalf} - 16px);
   }
   &.wrapper__half_right{
     margin-left: 0;
     padding-left: 0;
+    max-width: calc(#{$baseWidthHalf} - 25px);
   }
 }
 
@@ -60,7 +71,70 @@ body{
   width: 50%;
 }
 
-.button_hover_active{
+.button{
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-family: open_sanssemibold, sans-serif;
+  line-height: 32px;
+  height: 32px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+  &.button__big{
+    padding: 0 15px;
+    height: 2.8em;
+    line-height: 2.8em;
+  }
+  &.button__middle{
+    min-width: 80px;
+  }
+  &.button__small{
+    width: 32px;
+  }
+  &.button__yellow{
+    background-color: #ffb600;
+  }
+  &.button__grey{
+    background-color: #777d7f;
+  }
+  &.button__red{
+    background-color: #d92127;
+  }
+  &.button__transparent{
+    border: 1px solid #9d9d9d;
+    color: #9d9d9d;
+  }
+  &.button__edit,
+  &.button__delete{
+    color: #787878;
+    padding-top: 32px;
+    line-height: 2;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    text-transform: none;
+  }
+  &.button__edit{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAA1ElEQVQoU42RsW0CUQBDn0VHDxOwQySaIAagYAsKdiArJEW2SMEACWmQ2IEN6K9CcuSv4wTK3XHuvr6fbP8vBsr2BphKetMQxvYK+AJGwO4pZPsF+AbGdcBnL2R7BhyBSQ3sgXUnZDvGAAGjE7CUVLVCtlMllVItOgNzSZcc/kG2MzajMz6KMUDAojboHdjW91VdKdUa9W26ltFSxj+ogWy/AocSL8n2VtJH2z/eQz/A4ga1mR823aX8lh+XSmKXSpLtXao9M3e+Xl9CA9n2EGMDSPoDcsRKH+iwkrcAAAAASUVORK5CYII=");
+  }
+  &.button__delete{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4T+2Suw2AMBBD7V2gYwYEO7AvnxUoYZeHFBFEEZAIDQXpzjk/XXyxLg6wSCr269V2mWp1FIFeUnMFTOit7SEAgFlS9cAcW7tjggxzsBgYJdWZgOk94BQiT6awHZ5/3gJRBALsrv4BHHl9LMTX/yAHsAF6spPdkcQqqQAAAABJRU5ErkJggg==");
+    text-indent: -3px;
+  }
+  &.button__disabled{
+    background: #9d9d9d;
+    color: #d5d5d5;
+  }
+  &:hover{
+    @include transform(translateY(-1px));
+  }
+  &:active{
+    @include transform(scale(0.98));
+  }
+}
+
+.button_activation{
   transition: .3s;
   cursor: pointer;
   &:hover{
@@ -70,5 +144,6 @@ body{
     @include transform(scale(0.98));
   }
 }
-
-
+/*
+** END COMMON
+*/

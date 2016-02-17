@@ -11,6 +11,7 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   position: relative;
   padding-right: 16px;
+  z-index: 1;
 }
 .rules_col{
   text-align: center;
@@ -39,6 +40,7 @@
   &.rules_head_text__subtitle{
     color: #005c7b;
     margin-top: 8px;
+    font-variant: small-caps;
   }
 }
 
@@ -58,6 +60,7 @@
 .rules_button{
   background: #656b6d;
   height: 84px;
+  border: 1px solid #fff;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
   &.active{
     .rules_body_text{
@@ -100,6 +103,9 @@
     color: #ffb600;
     font-size: 18px;
     font-family: open_sanssemibold, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 .rules_review{
