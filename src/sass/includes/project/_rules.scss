@@ -2,26 +2,15 @@
 ** RULES
 */
 .rules{
-  float: left;
-  width: 50%;
+
 }
 
 .rules_head{
   background: #d8e2e5;
   height: 64px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   position: relative;
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150vw;
-    height: 100%;
-    background: #d8e2e5;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
+  padding-right: 16px;
 }
 .rules_col{
   text-align: center;
@@ -55,42 +44,21 @@
 
 .rules_body{
   overflow-y: auto;
-  max-height: 700px;
-  overflow-x: visible;
+  max-height: 550px;
 }
 .rules_row{
-  background: #656b6d;
-  background-clip: content-box;
-  height: 100px;
   padding: 8px 0;
-  cursor: pointer;
-  position: relative;
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 150vw;
-    z-index: -1;
-  }
-  &:nth-child(2n+1):before{
+  &:nth-child(2n+1){
     background: #fff;
   }
-  &:nth-child(2n):before{
+  &:nth-child(2n){
     background: #f2f2f2;
   }
-  &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: calc(100% - 10px);
-    left: 0;
-    width: 100%;
-    height: 2px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  }
+}
+.rules_button{
+  background: #656b6d;
+  height: 84px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
   &.active{
     .rules_body_text{
       &.rules_body_text__number {

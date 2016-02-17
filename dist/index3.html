@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header clr"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
+    <header class="header clr">
+      <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
         <div class="header_top">
           <div class="greeting">Hello, <span class="greeting_name">Admin</span>!</div><a href="index1.html" title="Log off" class="log_off">Log off</a>
         </div>
@@ -33,20 +33,24 @@
             </li>
           </ul>
         </nav>
-      </header>
-      <section class="panel_top">
-        <button class="panel_button panel_button__light right">Create New Rule</button>
+      </div>
+    </header>
+    <section class="panel_top">
+      <div class="wrapper">
+        <button class="panel_button panel_button__light button_hover_active">Create New Rule</button>
         <h2 class="panel_title panel_title__light">Processor Selection</h2>
         <h4 class="panel_subtitle">Rules Parametres</h4>
-      </section>
-      <section class="rules">
-        <div class="rules_head clr">
+      </div>
+    </section>
+    <section class="rules col-6">
+      <div class="rules_head clr">
+        <div class="wrapper wrapper__half_left">
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">RULE</div>
+            <div class="rules_head_text rules_head_text__title">rule</div>
             <div class="rules_head_text rules_head_text__subtitle">Status/Number</div>
           </div>
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">Name</div>
+            <div class="rules_head_text rules_head_text__title">name</div>
             <div class="rules_head_text rules_head_text__subtitle">Rule tittle/Creator</div>
           </div>
           <div class="rules_col">
@@ -58,170 +62,211 @@
             <div class="rules_head_text rules_head_text__subtitle">View</div>
           </div>
         </div>
-        <div class="rules_body">
-          <div class="rules_row active">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
-            </div>
-          </div>
-          <div class="rules_row">
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__number">1</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text rules_body_text__title">Best Profit</div>
-              <div class="rules_body_text">Patrick Black</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_body_text">6/18/2015</div>
-              <div class="rules_body_text">12:01:10 PM</div>
-            </div>
-            <div class="rules_col">
-              <div class="rules_review"></div>
+      </div>
+      <div class="rules_body">
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules_row">
+          <div class="wrapper wrapper__half_left">
+            <div class="rules_button button_hover_active">
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__number">1</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text rules_body_text__title">Best Profit</div>
+                <div class="rules_body_text">Patrick Black</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_body_text">6/18/2015</div>
+                <div class="rules_body_text">12:01:10 PM</div>
+              </div>
+              <div class="rules_col">
+                <div class="rules_review"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rules_description col-6"></section>
   </body>
   <script src="scripts/libs/jquery-1.11.1.min.js"></script>
   <script src="scripts/scripts.js"></script>

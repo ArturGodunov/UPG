@@ -6,8 +6,8 @@ html(lang='en')
     include includes/blocks/head
     body
 
-        .wrapper
-            header.header.clr
+        header.header.clr
+            .wrapper
                 a.logo_link(href='/')
                     img.logo(src='images/black_logo__small.png' alt='Unified Payment Gateway')
                 .header_top
@@ -15,45 +15,43 @@ html(lang='en')
                     a.log_off(href='index1.html' title='Log off') Log off
                 nav.menu
                     ul.menu_list
-                        each val, index in ['Rules','Processors','Transactions','Reports','Logs','Users','Configuration','License']
+                        each val, i in ['Rules','Processors','Transactions','Reports','Logs','Users','Configuration','License']
                             li.menu_item
-                                if index == 0
+                                if i == 0
                                     a.menu_link.active(href='/' title=val)= val
                                 else
                                     a.menu_link(href='/' title=val)= val
 
-            section.panel_top
-                button.panel_button.panel_button__light.right Create New Rule
+        section.panel_top
+            .wrapper
+                button.panel_button.panel_button__light.button_hover_active Create New Rule
                 h2.panel_title.panel_title__light Processor Selection
                 h4.panel_subtitle Rules Parametres
 
-            section.rules
-                .rules_head.clr
-                    .rules_col
-                        .rules_head_text.rules_head_text__title RULE
-                        .rules_head_text.rules_head_text__subtitle Status/Number
-                    .rules_col
-                        .rules_head_text.rules_head_text__title Name
-                        .rules_head_text.rules_head_text__subtitle Rule tittle/Creator
-                    .rules_col
-                        .rules_head_text.rules_head_text__title date
-                        .rules_head_text.rules_head_text__subtitle Modified
-                    .rules_col
-                        .rules_head_text.rules_head_text__title actions
-                        .rules_head_text.rules_head_text__subtitle View
-                .rules_body
-                    - for (var i=0; i < 10; i++)
-                        .rules_row(class= i == 0 ? 'active' : '')
-                            .rules_col
-                                .rules_body_text.rules_body_text__number 1
-                            .rules_col
-                                .rules_body_text.rules_body_text__title Best Profit
-                                .rules_body_text Patrick Black
-                            .rules_col
-                                .rules_body_text 6/18/2015
-                                .rules_body_text 12:01:10 PM
-                            .rules_col
-                                .rules_review
+        section.rules.col-6
+            .rules_head.clr
+                .wrapper.wrapper__half_left
+                    each val in [['rule','Status/Number'],['name','Rule tittle/Creator'],['date','Modified'],['actions','View']]
+                        .rules_col
+                            .rules_head_text.rules_head_text__title= val[0]
+                            .rules_head_text.rules_head_text__subtitle= val[1]
+            .rules_body
+                - for (var i=0; i < 10; i++)
+                    .rules_row
+                        .wrapper.wrapper__half_left
+                            .rules_button.button_hover_active(class= i == 0 ? 'active' : '')
+                                .rules_col
+                                    .rules_body_text.rules_body_text__number 1
+                                .rules_col
+                                    .rules_body_text.rules_body_text__title Best Profit
+                                    .rules_body_text Patrick Black
+                                .rules_col
+                                    .rules_body_text 6/18/2015
+                                    .rules_body_text 12:01:10 PM
+                                .rules_col
+                                    .rules_review
+
+        section.rules_description.col-6
 
 
     include includes/blocks/scripts

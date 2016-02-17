@@ -2,7 +2,7 @@
 ** HEADER
 */
 .header{
-  position: relative;
+
 }
 .logo_link{
   display: inline-block;
@@ -15,7 +15,7 @@
 .header_top{
   position: absolute;
   top: 0;
-  right: 0;
+  right: 25px;
   font-size: 14px;
   vertical-align: top;
   .greeting{
