@@ -2,7 +2,7 @@
 ** RULES
 */
 .rules{
-
+  background: #fff;
 }
 
 .rules_head{
@@ -43,8 +43,8 @@
 }
 
 .rules_body{
-  overflow-y: auto;
-  max-height: 550px;
+  overflow-y: scroll;
+  height: calc(100vh - 300px);
 }
 .rules_row{
   padding: 8px 0;
