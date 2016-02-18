@@ -152,7 +152,8 @@
 }
 .rules_payment_arrow{
   position: absolute;
-  left: 47%;
+  left: 48%;
+  @include transform(translateX(-50%));
   width: 11px;
   height: 10px;
   &.rules_payment_arrow__right{

@@ -7,6 +7,11 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  &.panel_top__slider{
+    padding-left: 65px;
+    padding-bottom: 16px;
+    padding-right: 40px;
+  }
 }
 
 .panel_title{
@@ -16,6 +21,11 @@
   &.panel_title__light{
     color: #fff;
   }
+  &.panel_title__dark{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+  }
 }
 .panel_subtitle{
   display: inline-block;
@@ -23,28 +33,78 @@
   font-family: open_sanssemibold, sans-serif;
   color: #5d5d5d;
   font-variant: small-caps;
-  margin: 0.8em 0 0 3.3em;
+  &.panel_subtitle__triangle{
+    margin: 0.8em 0 0 3.3em;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-top: 3px;
+      width: 14px;
+      height: 14px;
+      background: #bdc6c9;
+      @include transform(translateX(-50%) rotate(45deg));
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4)
+    }
+  }
+  &.panel_subtitle__dark{
+    color: #000;
+  }
+  &.panel_subtitle__link{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.label{
+  display: block;
   position: relative;
-  &:before,
-  &:after{
-    content: '';
+  .select,
+  .input{
+    margin-top: 8px;
+  }
+}
+.select,
+.input,
+.select_item{
+  height: 24px;
+  line-height: 24px;
+  padding: 0 6px;
+  background-color: #f3f3f3;
+  color: #4c4c4c;
+  font-size: 14px;
+  font-family: open_sanssemibold, sans-serif;
+  font-variant: small-caps;
+  width: 100%;
+}
+.select{
+  cursor: pointer;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAnElEQVRIS+2RsQkEIRBF/4KpVuA2YR+2oIltGViDfViBoRUYC3fMwcIeHDe7yEXnT0zG95k3W631gR9mWwWc3aWIM4SlaF5RzhmllI8gYwystV9L2BuMMZBSQmvtDaS1hvceQoi5Avrde0eM8fVSpJQIIUApNa/oINAGtAnFOYd931k4DbCKzpTjFuT+am4VXIWe51YBa20p+gNFT81nduHPKem7AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.select_list{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  background: #fff;
+  &.show{
     display: block;
-    position: absolute;
-    top: 100%;
-    margin-top: 5px;
-    width: 10px;
-    height: 10px;
-    background: #bdc6c9;
   }
-  &:before{
-    right: 50%;
-    @include transform(skew(0deg, 45deg));
-    box-shadow: 2px 5px 3px -1px rgba(0, 0, 0, 0.4)
-  }
-  &:after{
-    left: 50%;
-    @include transform(skew(0deg, -45deg));
-    box-shadow: 0px 6px 3px -1px rgba(0, 0, 0, 0.4)
+}
+.select_item{
+  transition: .2s;
+  &:hover{
+    background: #656b6d;
+    color: #fff;
   }
 }
 /*

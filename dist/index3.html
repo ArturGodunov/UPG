@@ -7,11 +7,11 @@
     <title>UPG</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="footer">
     <header class="header clr">
       <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
         <div class="header_top">
-          <div class="greeting">Hello, <span class="greeting_name">Admin</span>!</div><a href="index1.html" title="Log off" class="log_off">Log off</a>
+          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" title="Log off" class="log_off">Log off</a>
         </div>
         <nav class="menu">
           <ul class="menu_list">
@@ -31,32 +31,32 @@
       <div class="wrapper">
         <button class="button button__big button__yellow right">Create New Rule</button>
         <h2 class="panel_title panel_title__light">Processor Selection</h2>
-        <h4 class="panel_subtitle">Rules Parametres</h4>
+        <h4 class="panel_subtitle panel_subtitle__triangle">Rules Parametres</h4>
       </div>
     </section>
     <section class="rules col-6">
-      <div class="rules_head clr">
+      <div class="head head__dark head__rules clr">
         <div class="wrapper wrapper__half_left">
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">rule</div>
-            <div class="rules_head_text rules_head_text__subtitle">Status/Number</div>
+            <div class="head_text head_text__title">rule</div>
+            <div class="head_text head_text__subtitle">Status/Number</div>
           </div>
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">name</div>
-            <div class="rules_head_text rules_head_text__subtitle">Rule tittle/Creator</div>
+            <div class="head_text head_text__title">name</div>
+            <div class="head_text head_text__subtitle">Rule tittle/Creator</div>
           </div>
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">date</div>
-            <div class="rules_head_text rules_head_text__subtitle">Modified</div>
+            <div class="head_text head_text__title">date</div>
+            <div class="head_text head_text__subtitle">Modified</div>
           </div>
           <div class="rules_col">
-            <div class="rules_head_text rules_head_text__title">actions</div>
-            <div class="rules_head_text rules_head_text__subtitle">View</div>
+            <div class="head_text head_text__title">actions</div>
+            <div class="head_text head_text__subtitle">View</div>
           </div>
         </div>
       </div>
       <div class="rules_body">
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation active">
               <div class="rules_col">
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -116,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -136,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -156,7 +156,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -196,7 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -216,7 +216,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -236,7 +236,7 @@
             </div>
           </div>
         </div>
-        <div class="rules_row">
+        <div class="body_row body_row__rules">
           <div class="wrapper wrapper__half_left">
             <div class="rules_button button_activation">
               <div class="rules_col">
@@ -367,7 +367,241 @@
         </div>
       </div>
     </section>
+    <section class="slider">
+      <div class="slider_close button_activation"></div>
+      <section class="panel_top panel_top__slider">
+        <form>
+          <div class="row">
+            <div class="col-2">
+              <h3 class="panel_title panel_title__dark">configuration</h3>
+            </div>
+            <div class="col-2"><a href class="panel_subtitle panel_subtitle__dark panel_subtitle__link">Code Mapping</a></div>
+          </div>
+          <div class="row m-t-md">
+            <div class="col-2">
+              <h5 class="panel_subtitle panel_subtitle__dark m-t-lg">Authorize.net</h5>
+            </div>
+            <div class="col-2">
+              <label for="select_1" class="label">
+                <div class="panel_subtitle">Configuration Set</div>
+                <input id="select_1" placeholder="Sandbox" type="text" readonly class="select">
+                <ul class="select_list">
+                  <li class="select_item body_row">Sandbox0</li>
+                  <li class="select_item body_row">Sandbox1</li>
+                  <li class="select_item body_row">Sandbox2</li>
+                  <li class="select_item body_row">Sandbox3</li>
+                  <li class="select_item body_row">Sandbox4</li>
+                </ul>
+              </label>
+            </div>
+            <div class="col-2">
+              <label for="input_1" class="label">
+                <div class="panel_subtitle">Transaction Fixed Fee</div>
+                <input id="input_1" placeholder="0.30" type="text" class="input">
+              </label>
+            </div>
+            <div class="col-2">
+              <label for="input_2" class="label">
+                <div class="panel_subtitle">Transaction Percentage Fee</div>
+                <input id="input_2" placeholder="2.90" type="text" class="input">
+              </label>
+            </div>
+            <div class="right">
+              <div class="pagination">Showing <span class="pagination_show">1-4</span> of <span class="pagination_all">20</span> items.</div>
+              <div class="pagination_block">
+                <button class="pagination_button pagination_button__prev"></button>
+                <button class="pagination_button">1</button>
+                <button class="pagination_button active">2</button>
+                <button class="pagination_button">3</button>
+                <button class="pagination_button pagination_button__next"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="slider_content">
+        <div class="head head__light head__slider">
+          <div class="slider_col">
+            <div class="head_text head_text__title">#</div>
+            <div class="head_text head_text__subtitle">Tittle</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Name</div>
+            <div class="head_text head_text__subtitle">Title</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Description</div>
+            <div class="head_text head_text__subtitle">Comments</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Value</div>
+            <div class="head_text head_text__subtitle">Title</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Value</div>
+            <div class="head_text head_text__subtitle">Default</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Enrypt</div>
+            <div class="head_text head_text__subtitle">Status</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Type</div>
+            <div class="head_text head_text__subtitle">Data</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">User</div>
+            <div class="head_text head_text__subtitle">Name</div>
+          </div>
+          <div class="slider_col">
+            <div class="head_text head_text__title">Modified</div>
+            <div class="head_text head_text__subtitle">Date/Time</div>
+          </div>
+        </div>
+        <div class="slider_body">
+          <div class="body_row body_row__slider">
+            <form>
+              <div class="slider_col">
+                <div class="slider_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input">
+                <label class="label slider_text">
+                  <input type="checkbox" class="checkbox">Show
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">
+                  <div class="slider_date">07/08/2015</div>
+                  <div class="slider_time">05:40:43 AM</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="body_row body_row__slider">
+            <form>
+              <div class="slider_col">
+                <div class="slider_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input">
+                <label class="label slider_text">
+                  <input type="checkbox" class="checkbox">Show
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">
+                  <div class="slider_date">07/08/2015</div>
+                  <div class="slider_time">05:40:43 AM</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="body_row body_row__slider">
+            <form>
+              <div class="slider_col">
+                <div class="slider_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input">
+                <label class="label slider_text">
+                  <input type="checkbox" class="checkbox">Show
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="slider_text">
+                  <div class="slider_date">07/08/2015</div>
+                  <div class="slider_time">05:40:43 AM</div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="body_row body_row__slider">
+            <div class="right m-t-sm">
+              <button class="button button__middle button__transparent">cancel</button>
+              <button class="button button__middle button__grey m-l-sm">safe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   </body>
   <script src="scripts/libs/jquery-1.11.1.min.js"></script>
+  <script src="scripts/libs/jquery.colorbox.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </html>

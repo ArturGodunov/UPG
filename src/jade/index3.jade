@@ -4,14 +4,14 @@ include includes/mixins
 doctype html
 html(lang='en')
     include includes/blocks/head
-    body
+    body.footer
 
         header.header.clr
             .wrapper
                 a.logo_link(href='/')
                     img.logo(src='images/black_logo__small.png' alt='Unified Payment Gateway')
                 .header_top
-                    .greeting Hello, <span class="greeting_name">Admin</span>!
+                    .greeting Hello, <a class="greeting_name" href="#">Admin</a>!
                     a.log_off(href='index1.html' title='Log off') Log off
                 nav.menu
                     ul.menu_list
@@ -19,81 +19,164 @@ html(lang='en')
                             li.menu_item
                                 a.menu_link(class= i == 0 ? 'active' : '')(href='/' title=val)= val
 
-        section.panel_top
-            .wrapper
-                button.button.button__big.button__yellow.right Create New Rule
-                h2.panel_title.panel_title__light Processor Selection
-                h4.panel_subtitle Rules Parametres
+        block panel_top
+            section.panel_top
+                .wrapper
+                    button.button.button__big.button__yellow.right Create New Rule
+                    h2.panel_title.panel_title__light Processor Selection
+                    h4.panel_subtitle.panel_subtitle__triangle Rules Parametres
 
-        section.rules.col-6
-            .rules_head.clr
-                .wrapper.wrapper__half_left
-                    each val in [['rule','Status/Number'],['name','Rule tittle/Creator'],['date','Modified'],['actions','View']]
-                        .rules_col
-                            .rules_head_text.rules_head_text__title= val[0]
-                            .rules_head_text.rules_head_text__subtitle= val[1]
-            .rules_body
-                - for (var i=0; i < 10; i++)
-                    .rules_row
-                        .wrapper.wrapper__half_left
-                            .rules_button.button_activation(class= i == 0 ? 'active' : '')
-                                .rules_col
-                                    .rules_body_text.rules_body_text__number 1
-                                .rules_col
-                                    .rules_body_text.rules_body_text__title Best Profit
-                                    .rules_body_text Patrick Black
-                                .rules_col
-                                    .rules_body_text 6/18/2015
-                                    .rules_body_text 12:01:10 PM
-                                .rules_col
-                                    .rules_review
+        block rules
+            section.rules.col-6
+                .head.head__dark.head__rules.clr
+                    .wrapper.wrapper__half_left
+                        each val in [['rule','Status/Number'],['name','Rule tittle/Creator'],['date','Modified'],['actions','View']]
+                            .rules_col
+                                .head_text.head_text__title= val[0]
+                                .head_text.head_text__subtitle= val[1]
+                .rules_body
+                    - for (var i=0; i < 10; i++)
+                        .body_row.body_row__rules
+                            .wrapper.wrapper__half_left
+                                .rules_button.button_activation(class= i == 0 ? 'active' : '')
+                                    .rules_col
+                                        .rules_body_text.rules_body_text__number 1
+                                    .rules_col
+                                        .rules_body_text.rules_body_text__title Best Profit
+                                        .rules_body_text Patrick Black
+                                    .rules_col
+                                        .rules_body_text 6/18/2015
+                                        .rules_body_text 12:01:10 PM
+                                    .rules_col
+                                        .rules_review
 
-        section.rules_description.col-6
-            .wrapper.wrapper__half_right.clr
-                h2.rules_title Rule #1
-                button.button.button__small.button__yellow.button__edit Edit
-                button.button.button__small.button__red.button__delete.m-l-sm Delete
+            section.rules_description.col-6
+                .wrapper.wrapper__half_right.clr
+                    h2.rules_title Rule #1
+                    button.button.button__small.button__yellow.button__edit Edit
+                    button.button.button__small.button__red.button__delete.m-l-sm Delete
 
-                h5.rules_subtitle Rule Name
-                .rules_name Best Profit
-                .right
-                    .rules_status Active<br>Status
-                    button.button.button__small.button__yellow.m-r-n-inlblc on
-                    button.button.button__small.button__grey.button__disabled off
+                    h5.rules_subtitle Rule Name
+                    .rules_name Best Profit
+                    .right
+                        .rules_status Active<br>Status
+                        button.button.button__small.button__yellow.m-r-n-inlblc on
+                        button.button.button__small.button__grey.button__disabled off
 
-                h5.rules_subtitle Creator Name
-                .rules_creator Patrick Blacknight
-                .right patrickblacknight@gmail.com
+                    h5.rules_subtitle Creator Name
+                    .rules_creator Patrick Blacknight
+                    .right patrickblacknight@gmail.com
 
-                h5.rules_subtitle Description
-                .rules_description_text.
-                    Description text description text description text description text description text description
-                    text ext description text description text description text description text description text
-                    ext description text description text description text description text description text
-                    description text description text description text description text description text description
-                    text description text
+                    h5.rules_subtitle Description
+                    .rules_description_text.
+                        Description text description text description text description text description text description
+                        text ext description text description text description text description text description text
+                        ext description text description text description text description text description text
+                        description text description text description text description text description text description
+                        text description text
 
-                h5.rules_subtitle.text-upper Payment Processors
-                .rules_payment_wrap
-                    .rules_payment.rules_payment__available
-                        .rules_payment_title Available
-                        ul.rules_payment_list
-                            - for (var i=0; i < 12; i++)
-                                li.rules_payment_item.checked.button_activation Authorize.net
-                    .rules_payment_arrow.rules_payment_arrow__right
-                    .rules_payment_arrow.rules_payment_arrow__left
-                    .rules_payment.rules_payment__assigned
-                        .rules_payment_title Assigned
-                        ul.rules_payment_list.rules_payment_list__numeric
-                            - for (var i=0; i < 13; i++)
-                                li.rules_payment_item.button_activation(class= i == 0 ? 'active' : '') Authorize.net
-                                    .arrow.arrow__up
-                                    .arrow.arrow__down
-                .right.m-t.m-b-xl
-                    button.button.button__middle.button__transparent cancel
-                    button.button.button__middle.button__yellow.m-l-sm safe
+                    h5.rules_subtitle.text-upper Payment Processors
+                    .rules_payment_wrap
+                        .rules_payment.rules_payment__available
+                            .rules_payment_title Available
+                            ul.rules_payment_list
+                                - for (var i=0; i < 12; i++)
+                                    li.rules_payment_item.checked.button_activation Authorize.net
+                        .rules_payment_arrow.rules_payment_arrow__right
+                        .rules_payment_arrow.rules_payment_arrow__left
+                        .rules_payment.rules_payment__assigned
+                            .rules_payment_title Assigned
+                            ul.rules_payment_list.rules_payment_list__numeric
+                                - for (var i=0; i < 13; i++)
+                                    li.rules_payment_item.button_activation(class= i == 0 ? 'active' : '') Authorize.net
+                                        .arrow.arrow__up
+                                        .arrow.arrow__down
+                    .right.m-t.m-b-xl
+                        button.button.button__middle.button__transparent cancel
+                        button.button.button__middle.button__yellow.m-l-sm safe
 
+        block slider
+            section.slider
+                .slider_close.button_activation
 
+                block panel_slider
+                    section.panel_top.panel_top__slider
+                        form
+                            .row
+                                .col-2
+                                    h3.panel_title.panel_title__dark configuration
+                                .col-2
+                                    a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href) Code Mapping
+                            .row.m-t-md
+                                .col-2
+                                    h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
+                                .col-2
+                                    label.label(for='select_1')
+                                        .panel_subtitle Configuration Set
+                                        input.select(id='select_1' placeholder='Sandbox' type='text' readonly)
+                                        ul.select_list
+                                            - for (var i=0; i < 5; i++)
+                                                li.select_item.body_row Sandbox#{i}
+                                .col-2
+                                    label.label(for='input_1')
+                                        .panel_subtitle Transaction Fixed Fee
+                                        input.input(id='input_1' placeholder='0.30' type='text')
+                                .col-2
+                                    label.label(for='input_2')
+                                        .panel_subtitle Transaction Percentage Fee
+                                        input.input(id='input_2' placeholder='2.90' type='text')
+                                .right
+                                    .pagination Showing <span class="pagination_show">1-4</span> of <span class="pagination_all">20</span> items.
+                                    .pagination_block
+                                        button.pagination_button.pagination_button__prev
+                                        button.pagination_button 1
+                                        button.pagination_button.active 2
+                                        button.pagination_button 3
+                                        button.pagination_button.pagination_button__next
+
+                block slider_content
+                    section.slider_content
+                        .head.head__light.head__slider
+                            each val in [['#','Tittle'],['Name','Title'],['Description','Comments'],['Value','Title'],['Value','Default'],['Enrypt','Status'],['Type','Data'],['User','Name'],['Modified','Date/Time']]
+                                .slider_col
+                                    .head_text.head_text__title= val[0]
+                                    .head_text.head_text__subtitle= val[1]
+                        .slider_body
+                            - for (var i=0; i < 3; i++)
+                                .body_row.body_row__slider
+                                    form
+                                        .slider_col
+                                            .slider_text 6
+                                        .slider_col
+                                            .slider_text.text-left.
+                                                AppDomaim<br>
+                                                Request<br>
+                                                Reuse<br>
+                                                Count
+                                        .slider_col
+                                            textarea.textarea
+                                        .slider_col
+                                            input.input(type='text')
+                                            label.label.slider_text
+                                                input.checkbox(type='checkbox')
+                                                | Show
+                                        .slider_col
+                                            .slider_text.text-overflow Perfectosoft\AddInModel\Processor
+                                        .slider_col
+                                            label.label
+                                                input.checkbox(type='checkbox')
+                                        .slider_col
+                                            .slider_text String
+                                        .slider_col
+                                            .slider_text.text-upper SERVER
+                                        .slider_col
+                                            .slider_text
+                                                .slider_date 07/08/2015
+                                                .slider_time 05:40:43 AM
+                            .body_row.body_row__slider
+                                .right.m-t-sm
+                                    button.button.button__middle.button__transparent cancel
+                                    button.button.button__middle.button__grey.m-l-sm safe
 
 
 

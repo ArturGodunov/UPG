@@ -1,0 +1,47 @@
+/*
+** PAGINATION
+*/
+.pagination{
+  color: #5d5d5d;
+  font-size: 11px;
+  margin-top: 6px;
+  .pagination_show,
+  .pagination_all{
+    font-family: open_sansbold, sans-serif;
+  }
+}
+.pagination_block{
+  float: right;
+  margin-top: 16px;
+}
+.pagination_button{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #3b3b3b;
+  font-size: 11px;
+  text-align: center;
+  transition: .3s;
+  vertical-align: top;
+  &.pagination_button__prev,
+  &.pagination_button__next{
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &.pagination_button__prev{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAQ0lEQVQIW4WNSQoAMAjExl97a3ubZxdFQbqgFyFEI4hR1QFgAlgkbaMyOcFLMibdpzw00TKeJbmicLFMt7KLvy+1tgGa9DfWS+P5DQAAAABJRU5ErkJggg==");
+  }
+  &.pagination_button__next{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAQ0lEQVQIW42OQQoAIAgEx197q2777FAoIio6CeOsq7l7BQpQJTWAE7PbYpdT/JFXMeuBJilmvDDZqH5KEbQ1dbo0WAeaeTfWLlYZmgAAAABJRU5ErkJggg==");
+  }
+  &.active,
+  &:hover{
+    background-color: #ebebeb;
+  }
+}
+/*
+** END PAGINATION
+*/

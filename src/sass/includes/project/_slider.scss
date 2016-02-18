@@ -1,0 +1,65 @@
+/*
+** SLIDER
+*/
+.slider{
+  position: fixed;
+  top: 158px;
+  right: 0;
+  width: 1160px;
+  min-height: 200px; ////////////
+  background: #fff;
+  z-index: 1;
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.4);
+}
+.slider_close{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAYElEQVQoU53RQQ7AIAgEwPXXe6veeHYDqaS1NQW8YCCjZm0kO4ADQBeRgWvt+nPedFPBBivYYRY/YAa/YBTvoKUMYIiI1pmD97+e+ov0sDWcENLr798RRg5JppDBClJ4AiFlc9wy/aDsAAAAAElFTkSuQmCC")no-repeat 50%, #dcdcdc;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+.slider_col{
+  text-align: center;
+  float: left;
+  &:nth-child(1){
+    width: 7%;
+  }
+  &:nth-child(2){
+    width: 7%;
+  }
+  &:nth-child(3){
+    width: 45%;
+  }
+  &:nth-child(4){
+    width: 7%;
+  }
+  &:nth-child(5){
+    width: 7%;
+  }
+  &:nth-child(6){
+    width: 6%;
+  }
+  &:nth-child(7){
+    width: 7%;
+  }
+  &:nth-child(8){
+    width: 7%;
+  }
+  &:nth-child(9){
+    width: 7%;
+  }
+}
+.slider_text{
+  color: #5d5d5d;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: open_sanssemibold, sans-serif;
+  font-variant: small-caps;
+}
+/*
+** END SLIDER
+*/
