@@ -23,4 +23,10 @@ $(document).ready(function () {
         });
     });
 
+    /**
+    * @todo Hide after click on Esc
+    * */
+    $('[data-configuration-button]').on('click', function() {
+        $('[data-configuration-slide]').toggleClass('show');
+    });
 });

@@ -45,21 +45,6 @@ body{
   }
 }
 
-.text-center{
-  text-align: center;
-}
-.text-left{
-  text-align: left;
-}
-.text-upper{
-  text-transform: uppercase;
-}
-.text-overflow{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .clr,
 .row,
 .body_row{
@@ -77,6 +62,16 @@ body{
 }
 .right{
   float: right;
+}
+
+.flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  &.flex__right{
+    justify-content: flex-end;
+  }
 }
 
 .col-2,
@@ -167,65 +162,97 @@ body{
   }
 }
 
-#cboxOverlay{
-  background: rgba(0,0,0,0.3);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#colorbox{
-  outline: none;
-}
-
-.head{
-  height: 64px;
+.label{
+  display: block;
   position: relative;
-  z-index: 1;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  &.head__dark{
-    background: #d8e2e5;
-  }
-  &.head__light{
-    background: #ececec;
-  }
-  &.head__rules{
-    padding-right: 16px;
-  }
-  &.head__slider{
-    padding-right: 35px;
-  }
-}
-.head_text{
-  font-size: 12px;
-  font-family: open_sanssemibold,sans-serif;
-  &.head_text__title{
-    color: #5d5d5d;
-    text-transform: uppercase;
-    margin-top: 18px;
-  }
-  &.head_text__subtitle{
-    color: #005c7b;
-    font-variant: small-caps;
+  cursor: pointer;
+  .select,
+  .input{
     margin-top: 8px;
   }
 }
-
-.body_row{
-  &:nth-child(2n+1){
+.select,
+.input,
+.select_item{
+  height: 24px;
+  line-height: 24px;
+  padding: 0 6px;
+  background-color: #f3f3f3;
+  color: #4c4c4c;
+  font-size: 14px;
+  font-family: open_sanssemibold, sans-serif;
+  font-variant: small-caps;
+  width: 100%;
+}
+.select{
+  cursor: pointer;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAnElEQVRIS+2RsQkEIRBF/4KpVuA2YR+2oIltGViDfViBoRUYC3fMwcIeHDe7yEXnT0zG95k3W631gR9mWwWc3aWIM4SlaF5RzhmllI8gYwystV9L2BuMMZBSQmvtDaS1hvceQoi5Avrde0eM8fVSpJQIIUApNa/oINAGtAnFOYd931k4DbCKzpTjFuT+am4VXIWe51YBa20p+gNFT81nduHPKem7AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.select_list{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  background: #fff;
+  &.show{
+    display: block;
+  }
+}
+.select_item{
+  transition: .2s;
+  &:hover{
+    background: #656b6d;
+    color: #fff;
+  }
+}
+.input{
+  &.input__table,
+  &.input__table:focus{
     background: #fff;
+    border: 1px solid #c7c7c7;
   }
-  &:nth-child(2n){
-    background: #f2f2f2;
+}
+.textarea,
+.textarea:focus{
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  padding: 3px 6px;
+}
+.checkbox{
+  display: none;
+}
+.checkbox_img{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-color: #bdc6c9;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAAgElEQVQ4T6XS0Q3AIAgE0DKDcV7pvMYZaGhigwYRrN/4gt7B9eO01goRYSeI6IZTT8NyzngErjBeLgxaWBjcYSHQg71grRUBoPRwAABTSrcMy4t9G1poBBuerKE8MPeMq2FVbUh5RuVFLu0OU0PRUC+2TFmiEcysDaM84Hmm/JoHI8aJTxf1a5kAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 20px 13px;
+  .checkbox:checked + &{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAAiUlEQVQ4T6XSYQqAIAwF4HaV6HDRFSKcRFeIDhddZTHBUNHpzN/zY/oeDD/OOB8GgNATAGSh18th97lhF1jCeDk1KGFqsIapwBbMgdOyIxEYHw4R4HOtNgyrFfs2lFANFj05h7qBpGdcDalqUcopGl7k0tawbCg5tBUrphyiGkysDaM80PLM8GteT5hvnyQbEGMAAAAASUVORK5CYII=");
   }
-  &.body_row__rules{
-    padding: 8px 0;
+  &.checkbox_img__small{
+    width: 16px;
+    height: 16px;
+    background-size: 14px 12px;
+    .checkbox:checked + &{
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAA1klEQVQoU42RMQ4BQRiF3x9KOiUN01EIB6HZQ9iN0ItYQU0lewZRuAa1aLAHwAEkxJMRs2Gz7E41mfzfvC/vFyQ8yhk3+MBKj5OylCRc2XYzV6Z3AAoALuCtnAhUrfGUQFeHiNA6zPvxicqZ1PjgBkBKK/pez3p98FfVWqRKuf0aYN0oHr3hKRYs2qOOUGafiiZIlD1ySRmYB1Jc3+sNVdvN8/4qJPupGID6EgWLoAqwGVb8AqPgYODdYriLr3IikoMW/4Kh5DN4q5gWY0EDA9jqRf9a1xN3pm/ncU0IdAAAAABJRU5ErkJggg==");
+    }
   }
-  &.body_row__slider{
-    padding: 14px 40px 14px 0;
-    min-height: 80px;
-  }
+}
+.checkbox_label{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 /*
 ** END COMMON

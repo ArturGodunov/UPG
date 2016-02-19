@@ -261,7 +261,7 @@
     <section class="rules_description col-6">
       <div class="wrapper wrapper__half_right clr">
         <h2 class="rules_title">Rule #1</h2>
-        <button class="button button__small button__yellow button__edit">Edit</button>
+        <button data-configuration-button class="button button__small button__yellow button__edit">Edit</button>
         <button class="button button__small button__red button__delete m-l-sm">Delete</button>
         <h5 class="rules_subtitle">Rule Name</h5>
         <div class="rules_name">Best Profit</div>
@@ -367,8 +367,8 @@
         </div>
       </div>
     </section>
-    <section class="slider">
-      <div class="slider_close button_activation"></div>
+    <section data-configuration-slide class="slider">
+      <div data-configuration-button class="slider_close button_activation"></div>
       <section class="panel_top panel_top__slider">
         <form>
           <div class="row">
@@ -459,13 +459,13 @@
           </div>
         </div>
         <div class="slider_body">
-          <div class="body_row body_row__slider">
-            <form>
+          <form>
+            <div class="body_row body_row__slider flex">
               <div class="slider_col">
-                <div class="slider_text">6</div>
+                <div class="table_text">6</div>
               </div>
               <div class="slider_col">
-                <div class="slider_text text-left">
+                <div class="table_text text-left">
                   AppDomaim<br>
                   Request<br>
                   Reuse<br>
@@ -476,127 +476,173 @@
                 <textarea class="textarea"></textarea>
               </div>
               <div class="slider_col">
-                <input type="text" class="input">
-                <label class="label slider_text">
-                  <input type="checkbox" class="checkbox">Show
+                <input type="text" class="input input__table">
+                <label class="label table_text m-t-sm">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
               </div>
               <div class="slider_col">
-                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+                <div class="table_text text-overflow">Perfectosoft\AddInModel\Processor</div>
               </div>
               <div class="slider_col">
                 <label class="label">
                   <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img"></div>
                 </label>
               </div>
               <div class="slider_col">
-                <div class="slider_text">String</div>
+                <div class="table_text">String</div>
               </div>
               <div class="slider_col">
-                <div class="slider_text text-upper">SERVER</div>
+                <div class="table_text text-upper">SERVER</div>
               </div>
               <div class="slider_col">
-                <div class="slider_text">
-                  <div class="slider_date">07/08/2015</div>
-                  <div class="slider_time">05:40:43 AM</div>
+                <div class="table_text">
+                  <div>07/08/2015</div>
+                  <div class="text-nowrap m-t-xs">05:40:43 AM</div>
                 </div>
               </div>
-            </form>
-          </div>
-          <div class="body_row body_row__slider">
-            <form>
-              <div class="slider_col">
-                <div class="slider_text">6</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-left">
-                  AppDomaim<br>
-                  Request<br>
-                  Reuse<br>
-                  Count
-                </div>
-              </div>
-              <div class="slider_col">
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="slider_col">
-                <input type="text" class="input">
-                <label class="label slider_text">
-                  <input type="checkbox" class="checkbox">Show
-                </label>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
-              </div>
-              <div class="slider_col">
-                <label class="label">
-                  <input type="checkbox" class="checkbox">
-                </label>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text">String</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-upper">SERVER</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text">
-                  <div class="slider_date">07/08/2015</div>
-                  <div class="slider_time">05:40:43 AM</div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="body_row body_row__slider">
-            <form>
-              <div class="slider_col">
-                <div class="slider_text">6</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-left">
-                  AppDomaim<br>
-                  Request<br>
-                  Reuse<br>
-                  Count
-                </div>
-              </div>
-              <div class="slider_col">
-                <textarea class="textarea"></textarea>
-              </div>
-              <div class="slider_col">
-                <input type="text" class="input">
-                <label class="label slider_text">
-                  <input type="checkbox" class="checkbox">Show
-                </label>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-overflow">Perfectosoft\AddInModel\Processor</div>
-              </div>
-              <div class="slider_col">
-                <label class="label">
-                  <input type="checkbox" class="checkbox">
-                </label>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text">String</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text text-upper">SERVER</div>
-              </div>
-              <div class="slider_col">
-                <div class="slider_text">
-                  <div class="slider_date">07/08/2015</div>
-                  <div class="slider_time">05:40:43 AM</div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="body_row body_row__slider">
-            <div class="right m-t-sm">
-              <button class="button button__middle button__transparent">cancel</button>
-              <button class="button button__middle button__grey m-l-sm">safe</button>
             </div>
-          </div>
+            <div class="body_row body_row__slider flex">
+              <div class="slider_col">
+                <div class="table_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input input__table">
+                <label class="label table_text m-t-sm">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img"></div>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">
+                  <div>07/08/2015</div>
+                  <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__slider flex">
+              <div class="slider_col">
+                <div class="table_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input input__table">
+                <label class="label table_text m-t-sm">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img"></div>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">
+                  <div>07/08/2015</div>
+                  <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__slider flex">
+              <div class="slider_col">
+                <div class="table_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input input__table">
+                <label class="label table_text m-t-sm">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img"></div>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">
+                  <div>07/08/2015</div>
+                  <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__slider flex flex__right">
+              <div class="m-t-sm">
+                <button class="button button__middle button__transparent">cancel</button>
+                <button class="button button__middle button__grey m-l-sm">safe</button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </section>

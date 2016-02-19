@@ -61,52 +61,7 @@
   }
 }
 
-.label{
-  display: block;
-  position: relative;
-  .select,
-  .input{
-    margin-top: 8px;
-  }
-}
-.select,
-.input,
-.select_item{
-  height: 24px;
-  line-height: 24px;
-  padding: 0 6px;
-  background-color: #f3f3f3;
-  color: #4c4c4c;
-  font-size: 14px;
-  font-family: open_sanssemibold, sans-serif;
-  font-variant: small-caps;
-  width: 100%;
-}
-.select{
-  cursor: pointer;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAnElEQVRIS+2RsQkEIRBF/4KpVuA2YR+2oIltGViDfViBoRUYC3fMwcIeHDe7yEXnT0zG95k3W631gR9mWwWc3aWIM4SlaF5RzhmllI8gYwystV9L2BuMMZBSQmvtDaS1hvceQoi5Avrde0eM8fVSpJQIIUApNa/oINAGtAnFOYd931k4DbCKzpTjFuT+am4VXIWe51YBa20p+gNFT81nduHPKem7AAAAAElFTkSuQmCC");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-.select_list{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  cursor: pointer;
-  background: #fff;
-  &.show{
-    display: block;
-  }
-}
-.select_item{
-  transition: .2s;
-  &:hover{
-    background: #656b6d;
-    color: #fff;
-  }
-}
+
 /*
 ** END PANEL TOP
 */

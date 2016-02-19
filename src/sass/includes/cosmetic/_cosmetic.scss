@@ -1,3 +1,21 @@
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-upper{
+  text-transform: uppercase;
+}
+.text-overflow{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text-nowrap{
+  white-space: nowrap;
+}
+
 .m-t-xl{
   margin-top: 40px;
 }
@@ -12,6 +30,9 @@
 }
 .m-t-sm{
   margin-top: 10px;
+}
+.m-t-xs{
+  margin-top: 5px;
 }
 
 .m-r-n-inlblc{

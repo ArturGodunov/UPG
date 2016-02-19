@@ -53,7 +53,7 @@ html(lang='en')
             section.rules_description.col-6
                 .wrapper.wrapper__half_right.clr
                     h2.rules_title Rule #1
-                    button.button.button__small.button__yellow.button__edit Edit
+                    button.button.button__small.button__yellow.button__edit(data-configuration-button) Edit
                     button.button.button__small.button__red.button__delete.m-l-sm Delete
 
                     h5.rules_subtitle Rule Name
@@ -96,8 +96,8 @@ html(lang='en')
                         button.button.button__middle.button__yellow.m-l-sm safe
 
         block slider
-            section.slider
-                .slider_close.button_activation
+            section.slider(data-configuration-slide)
+                .slider_close.button_activation(data-configuration-button)
 
                 block panel_slider
                     section.panel_top.panel_top__slider
@@ -142,13 +142,13 @@ html(lang='en')
                                     .head_text.head_text__title= val[0]
                                     .head_text.head_text__subtitle= val[1]
                         .slider_body
-                            - for (var i=0; i < 3; i++)
-                                .body_row.body_row__slider
-                                    form
+                            form
+                                - for (var i=0; i < 4; i++)
+                                    .body_row.body_row__slider.flex
                                         .slider_col
-                                            .slider_text 6
+                                            .table_text 6
                                         .slider_col
-                                            .slider_text.text-left.
+                                            .table_text.text-left.
                                                 AppDomaim<br>
                                                 Request<br>
                                                 Reuse<br>
@@ -156,27 +156,29 @@ html(lang='en')
                                         .slider_col
                                             textarea.textarea
                                         .slider_col
-                                            input.input(type='text')
-                                            label.label.slider_text
+                                            input.input.input__table(type='text')
+                                            label.label.table_text.m-t-sm
                                                 input.checkbox(type='checkbox')
-                                                | Show
+                                                .checkbox_img.checkbox_img__small
+                                                span.checkbox_label Show
                                         .slider_col
-                                            .slider_text.text-overflow Perfectosoft\AddInModel\Processor
+                                            .table_text.text-overflow Perfectosoft\AddInModel\Processor
                                         .slider_col
                                             label.label
                                                 input.checkbox(type='checkbox')
+                                                .checkbox_img
                                         .slider_col
-                                            .slider_text String
+                                            .table_text String
                                         .slider_col
-                                            .slider_text.text-upper SERVER
+                                            .table_text.text-upper SERVER
                                         .slider_col
-                                            .slider_text
-                                                .slider_date 07/08/2015
-                                                .slider_time 05:40:43 AM
-                            .body_row.body_row__slider
-                                .right.m-t-sm
-                                    button.button.button__middle.button__transparent cancel
-                                    button.button.button__middle.button__grey.m-l-sm safe
+                                            .table_text
+                                                div 07/08/2015
+                                                .text-nowrap.m-t-xs 05:40:43 AM
+                                .body_row.body_row__slider.flex.flex__right
+                                    .m-t-sm
+                                        button.button.button__middle.button__transparent cancel
+                                        button.button.button__middle.button__grey.m-l-sm safe
 
 
 
