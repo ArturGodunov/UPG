@@ -384,7 +384,9 @@
             <div class="col-2">
               <label for="select_1" class="label">
                 <div class="panel_subtitle">Configuration Set</div>
-                <input id="select_1" placeholder="Sandbox" type="text" readonly class="select">
+                <select id="select_1" placeholder="Sandbox" class="select">
+                  <option class="option">Sandbox</option>
+                </select>
                 <ul class="select_list">
                   <li class="select_item body_row">Sandbox0</li>
                   <li class="select_item body_row">Sandbox1</li>
@@ -636,8 +638,52 @@
                 </div>
               </div>
             </div>
-            <div class="body_row body_row__slider flex flex__right">
-              <div class="m-t-sm">
+            <div class="body_row body_row__slider flex">
+              <div class="slider_col">
+                <div class="table_text">6</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-left">
+                  AppDomaim<br>
+                  Request<br>
+                  Reuse<br>
+                  Count
+                </div>
+              </div>
+              <div class="slider_col">
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="slider_col">
+                <input type="text" class="input input__table">
+                <label class="label table_text m-t-sm">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-overflow">Perfectosoft\AddInModel\Processor</div>
+              </div>
+              <div class="slider_col">
+                <label class="label">
+                  <input type="checkbox" class="checkbox">
+                  <div class="checkbox_img"></div>
+                </label>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">String</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text text-upper">SERVER</div>
+              </div>
+              <div class="slider_col">
+                <div class="table_text">
+                  <div>07/08/2015</div>
+                  <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__slider">
+              <div class="m-t-sm text-right">
                 <button class="button button__middle button__transparent">cancel</button>
                 <button class="button button__middle button__grey m-l-sm">safe</button>
               </div>

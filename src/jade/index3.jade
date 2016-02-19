@@ -113,7 +113,8 @@ html(lang='en')
                                 .col-2
                                     label.label(for='select_1')
                                         .panel_subtitle Configuration Set
-                                        input.select(id='select_1' placeholder='Sandbox' type='text' readonly)
+                                        select.select(id='select_1' placeholder='Sandbox')
+                                            option.option Sandbox
                                         ul.select_list
                                             - for (var i=0; i < 5; i++)
                                                 li.select_item.body_row Sandbox#{i}
@@ -143,7 +144,7 @@ html(lang='en')
                                     .head_text.head_text__subtitle= val[1]
                         .slider_body
                             form
-                                - for (var i=0; i < 4; i++)
+                                - for (var i=0; i < 5; i++)
                                     .body_row.body_row__slider.flex
                                         .slider_col
                                             .table_text 6
@@ -175,8 +176,8 @@ html(lang='en')
                                             .table_text
                                                 div 07/08/2015
                                                 .text-nowrap.m-t-xs 05:40:43 AM
-                                .body_row.body_row__slider.flex.flex__right
-                                    .m-t-sm
+                                .body_row.body_row__slider
+                                    .m-t-sm.text-right
                                         button.button.button__middle.button__transparent cancel
                                         button.button.button__middle.button__grey.m-l-sm safe
 

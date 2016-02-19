@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    /**
+     * Popup Welcom
+     * */
     //$.colorbox({
     //    href:'popup1.html',
     //    opacity: 1,
@@ -14,6 +17,9 @@ $(document).ready(function () {
     //    }
     //});
 
+    /**
+     * Custom select
+     * */
     $('.select').on('click', function() {
         var list = $(this).siblings('.select_list');
         list.toggleClass('show');
@@ -23,11 +29,14 @@ $(document).ready(function () {
         });
     });
 
+    /**
+     * Toggle slide
+     * */
     $('[data-configuration-button]').on('click', function() {
         $('[data-configuration-slide]').toggleClass('show');
     });
     $(document).keydown(function(e) {
-        if (e.keyCode == 27) {
+        if (e.keyCode == 27) { /** Press Esc*/
             $('[data-configuration-slide]').removeClass('show');
         }
     });
