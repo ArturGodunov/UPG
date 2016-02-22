@@ -19,14 +19,15 @@ $(document).ready(function () {
 
     /**
      * Custom select
+     * don't use tag 'label' - 2 click
      * */
-    $('.select').on('click', function() {
-        var list = $(this).siblings('.select_list');
-        list.toggleClass('show');
-        list.find('.select_item').on('click', function() {
-            var text = $(this).text();
-            $(this).parents('.label').find('.select').val(text);
-        });
+    $('[data-select]').on('click', function() {
+        $(this).find('.select_list').toggleClass('show');
+    });
+    $('[data-select-item]').on('click', function() {
+        var text = $(this).text();
+        $(this).parents('.label').find('[selected]').val(text);
+        $(this).parents('.label').find('.select_pseudo').text(text);
     });
 
     /**
@@ -40,4 +41,10 @@ $(document).ready(function () {
             $('[data-configuration-slide]').removeClass('show');
         }
     });
+
+    /**
+     * Tooltip
+     * */
+    $(document).tooltip();
+
 });

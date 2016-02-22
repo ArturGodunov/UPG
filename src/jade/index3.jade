@@ -111,13 +111,14 @@ html(lang='en')
                                 .col-2
                                     h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
                                 .col-2
-                                    label.label(for='select_1')
+                                    div.label(data-select)
                                         .panel_subtitle Configuration Set
-                                        select.select(id='select_1' placeholder='Sandbox')
-                                            option.option Sandbox
+                                        select.select
+                                            option(selected)
+                                        .select_pseudo Sandbox
                                         ul.select_list
                                             - for (var i=0; i < 5; i++)
-                                                li.select_item.body_row Sandbox#{i}
+                                                li.select_item.body_row(data-select-item) Sandbox#{i}
                                 .col-2
                                     label.label(for='input_1')
                                         .panel_subtitle Transaction Fixed Fee
@@ -158,7 +159,7 @@ html(lang='en')
                                             textarea.textarea
                                         .slider_col
                                             input.input.input__table(type='text')
-                                            label.label.table_text.m-t-sm
+                                            label.label.table_text.m-t-sm.text-left
                                                 input.checkbox(type='checkbox')
                                                 .checkbox_img.checkbox_img__small
                                                 span.checkbox_label Show

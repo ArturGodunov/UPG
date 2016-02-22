@@ -321,12 +321,16 @@ body {
   position: relative;
   cursor: pointer;
 }
-.label .select,
+.label .select_pseudo,
 .label .input {
   margin-top: 8px;
 }
 
-.select,
+.select {
+  display: none;
+}
+
+.select_pseudo,
 .input,
 .select_item {
   height: 24px;
@@ -340,7 +344,7 @@ body {
   width: 100%;
 }
 
-.select {
+.select_pseudo {
   cursor: pointer;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAnElEQVRIS+2RsQkEIRBF/4KpVuA2YR+2oIltGViDfViBoRUYC3fMwcIeHDe7yEXnT0zG95k3W631gR9mWwWc3aWIM4SlaF5RzhmllI8gYwystV9L2BuMMZBSQmvtDaS1hvceQoi5Avrde0eM8fVSpJQIIUApNa/oINAGtAnFOYd931k4DbCKzpTjFuT+am4VXIWe51YBa20p+gNFT81nduHPKem7AAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
@@ -1322,6 +1326,25 @@ body {
 
 /*
 ** END COLORBOX
+*/
+/*
+** TOOLTIP
+*/
+.ui-tooltip {
+  padding: 8px;
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  box-shadow: 0 0 5px #aaa;
+  background: #fff;
+}
+
+body .ui-tooltip {
+  border-width: 2px;
+}
+
+/*
+** END TOOLTIP
 */
 /*****************************************************************************
 *

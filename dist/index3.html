@@ -382,19 +382,20 @@
               <h5 class="panel_subtitle panel_subtitle__dark m-t-lg">Authorize.net</h5>
             </div>
             <div class="col-2">
-              <label for="select_1" class="label">
+              <div data-select class="label">
                 <div class="panel_subtitle">Configuration Set</div>
-                <select id="select_1" placeholder="Sandbox" class="select">
-                  <option class="option">Sandbox</option>
+                <select class="select">
+                  <option selected></option>
                 </select>
+                <div class="select_pseudo">Sandbox</div>
                 <ul class="select_list">
-                  <li class="select_item body_row">Sandbox0</li>
-                  <li class="select_item body_row">Sandbox1</li>
-                  <li class="select_item body_row">Sandbox2</li>
-                  <li class="select_item body_row">Sandbox3</li>
-                  <li class="select_item body_row">Sandbox4</li>
+                  <li data-select-item class="select_item body_row">Sandbox0</li>
+                  <li data-select-item class="select_item body_row">Sandbox1</li>
+                  <li data-select-item class="select_item body_row">Sandbox2</li>
+                  <li data-select-item class="select_item body_row">Sandbox3</li>
+                  <li data-select-item class="select_item body_row">Sandbox4</li>
                 </ul>
-              </label>
+              </div>
             </div>
             <div class="col-2">
               <label for="input_1" class="label">
@@ -479,7 +480,7 @@
               </div>
               <div class="slider_col">
                 <input type="text" class="input input__table">
-                <label class="label table_text m-t-sm">
+                <label class="label table_text m-t-sm text-left">
                   <input type="checkbox" class="checkbox">
                   <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
@@ -523,7 +524,7 @@
               </div>
               <div class="slider_col">
                 <input type="text" class="input input__table">
-                <label class="label table_text m-t-sm">
+                <label class="label table_text m-t-sm text-left">
                   <input type="checkbox" class="checkbox">
                   <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
@@ -567,7 +568,7 @@
               </div>
               <div class="slider_col">
                 <input type="text" class="input input__table">
-                <label class="label table_text m-t-sm">
+                <label class="label table_text m-t-sm text-left">
                   <input type="checkbox" class="checkbox">
                   <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
@@ -611,7 +612,7 @@
               </div>
               <div class="slider_col">
                 <input type="text" class="input input__table">
-                <label class="label table_text m-t-sm">
+                <label class="label table_text m-t-sm text-left">
                   <input type="checkbox" class="checkbox">
                   <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
@@ -655,7 +656,7 @@
               </div>
               <div class="slider_col">
                 <input type="text" class="input input__table">
-                <label class="label table_text m-t-sm">
+                <label class="label table_text m-t-sm text-left">
                   <input type="checkbox" class="checkbox">
                   <div class="checkbox_img checkbox_img__small"></div><span class="checkbox_label">Show</span>
                 </label>
@@ -695,5 +696,6 @@
   </body>
   <script src="scripts/libs/jquery-1.11.1.min.js"></script>
   <script src="scripts/libs/jquery.colorbox.min.js"></script>
+  <script src="scripts/libs/jquery-ui.tooltip.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </html>
