@@ -42,9 +42,36 @@ $(document).ready(function () {
         }
     });
 
+   /**
+    * Text overflow
+    * */
+   $('[data-text-overflow]').each(function() {
+       var fullText = $(this).text(),
+           lastIndex = fullText.lastIndexOf('\\'),
+           copyEndText = fullText.slice(lastIndex);
+       $(this).text('..' + copyEndText);
+   });
+
     /**
      * Tooltip
      * */
-    $(document).tooltip();
+    $('[data-string-tooltip]').tooltip({
+        position: {
+            my: 'left bottom-15',
+            at: 'left top',
+            using: function(position, feedback) {
+                $(this).css(position);
+                $("<div>")
+                    .addClass("arrow")
+                    .addClass(feedback.vertical)
+                    .addClass(feedback.horizontal)
+                    .appendTo(this);
+            }
+        }
+    });
+
+
+
+
 
 });
