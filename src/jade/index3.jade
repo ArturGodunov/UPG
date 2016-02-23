@@ -12,12 +12,12 @@ html(lang='en')
                     img.logo(src='images/black_logo__small.png' alt='Unified Payment Gateway')
                 .header_top
                     .greeting Hello, <a class="greeting_name" href="#">Admin</a>!
-                    a.log_off(href='index1.html' title='Log off') Log off
+                    a.log_off(href='index1.html') Log off
                 nav.menu
                     ul.menu_list
                         each val, i in ['Rules','Processors','Transactions','Reports','Logs','Users','Configuration','License']
                             li.menu_item
-                                a.menu_link(class= i == 0 ? 'active' : '')(href='/' title=val)= val
+                                a.menu_link(class= i == 0 ? 'active' : '')(href='/')= val
 
         block panel_top
             section.panel_top
@@ -53,7 +53,7 @@ html(lang='en')
             section.rules_description.col-6
                 .wrapper.wrapper__half_right.clr
                     h2.rules_title Rule #1
-                    button.button.button__small.button__yellow.button__edit(data-configuration-button) Edit
+                    button.button.button__small.button__yellow.button__edit(data-slide-open='1') Edit
                     button.button.button__small.button__red.button__delete.m-l-sm Delete
 
                     h5.rules_subtitle Rule Name
@@ -78,14 +78,14 @@ html(lang='en')
                     h5.rules_subtitle.text-upper Payment Processors
                     .rules_payment_wrap
                         .rules_payment.rules_payment__available
-                            .rules_payment_title Available
+                            .rules_payment_title.rules_payment_title__orange Available
                             ul.rules_payment_list
                                 - for (var i=0; i < 12; i++)
-                                    li.rules_payment_item.checked.button_activation Authorize.net
+                                    li.rules_payment_item.tick.button_activation Authorize.net
                         .rules_payment_arrow.rules_payment_arrow__right
                         .rules_payment_arrow.rules_payment_arrow__left
                         .rules_payment.rules_payment__assigned
-                            .rules_payment_title Assigned
+                            .rules_payment_title.rules_payment_title__orange Assigned
                             ul.rules_payment_list.rules_payment_list__numeric
                                 - for (var i=0; i < 13; i++)
                                     li.rules_payment_item.button_activation(class= i == 0 ? 'active' : '') Authorize.net
@@ -93,20 +93,20 @@ html(lang='en')
                                         .arrow.arrow__down
                     .right.m-t.m-b-xl
                         button.button.button__middle.button__transparent cancel
-                        button.button.button__middle.button__yellow.m-l-sm safe
+                        button.button.button__middle.button__yellow.m-l-xs safe
 
-        block slider
-            section.slider(data-configuration-slide)
-                .slider_close.button_activation(data-configuration-button)
+        block slider_1
+            section.slider(data-slide='1')
+                .slider_close.button_activation(data-slide-close)
 
-                block panel_slider
+                block slider_panel_1
                     section.panel_top.panel_top__slider
                         form
                             .row
                                 .col-2
                                     h3.panel_title.panel_title__dark configuration
                                 .col-2
-                                    a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href) Code Mapping
+                                    a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href data-slide-open='2') Code Mapping
                             .row.m-t-md
                                 .col-2
                                     h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
@@ -136,7 +136,7 @@ html(lang='en')
                                         button.pagination_button 3
                                         button.pagination_button.pagination_button__next
 
-                block slider_content
+                block slider_content_1
                     section.slider_content
                         .head.head__light.head__slider
                             each val in [['#','Tittle'],['Name','Title'],['Description','Comments'],['Value','Title'],['Value','Default'],['Enrypt','Status'],['Type','Data'],['User','Name'],['Modified','Date/Time']]
@@ -180,9 +180,64 @@ html(lang='en')
                                 .body_row.body_row__slider
                                     .m-t-sm.text-right
                                         button.button.button__middle.button__transparent cancel
-                                        button.button.button__middle.button__grey.m-l-sm safe
+                                        button.button.button__middle.button__grey.m-l-xs safe
 
 
+        block slider_2
+            section.slider(data-slide='2')
+                .slider_close.button_activation(data-slide-close)
+                .slider_delete.button_activation Delete
+
+                block slider_panel_2
+                    section.panel_top.panel_top__slider
+                        form
+                            .row
+                                .col-2
+                                    a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href data-slide-open='1') configuration
+                                .col-2
+                                    h3.panel_title.panel_title__dark Code Mapping
+                            .row.m-t-md
+                                .col-2
+                                    h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
+                                .col-2
+                                    div.label(data-select)
+                                        .panel_subtitle Transaction Status
+                                        select.select
+                                            option(selected)
+                                        .select_pseudo Sandbox
+                                        ul.select_list
+                                            - for (var i=0; i < 5; i++)
+                                                li.select_item.body_row(data-select-item) Sandbox#{i}
+                                .col-2
+                                    label.label(for='input_3')
+                                        .panel_subtitle Code
+                                        input.input(id='input_3' placeholder='' type='text')
+                            .row.m-t-sm
+                                .right
+                                    button.button.button__middle.button__grey.button__small_height add
+                                .col-offset-2.m-r-xxl
+                                    label.label(for='input_4')
+                                        .panel_subtitle Description
+                                        input.input(id='input_4' placeholder='' type='text')
+
+                block slider_content_2
+                    section.slider_content
+                        .slider_body.slider_body__col
+                            form
+                                - for (var i=0; i < 4; i++)
+                                    .col-3
+                                        .rules_payment_title.rules_payment_title__gray Approved
+                                        ul.rules_payment_list
+                                            - for (var j=0; j < 12; j++)
+                                                li.rules_payment_item.rules_payment_item__checkbox.button_activation
+                                                    label.label.table_text
+                                                        input.checkbox(type='checkbox')
+                                                        .checkbox_img.checkbox_img__small.checkbox_img__light
+                                                        span.checkbox_label.checkbox_label__simple Insufficient Funds. The card does not have enough funds to cover the transaction.
+                                .clr
+                                .m-t-lg.text-right
+                                    button.button.button__middle.button__transparent cancel
+                                    button.button.button__middle.button__grey.m-l-xs safe
 
 
     include includes/blocks/scripts

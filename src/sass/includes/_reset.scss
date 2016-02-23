@@ -46,16 +46,16 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block;
 }
-*{
+*,
+*:before,
+*:after{
 	box-sizing: border-box;
-  &:before,
-  &:after{
-    box-sizing: border-box;
-  }
 }
-input{
+input,
+textarea{
   border: none;
   border-radius: 0;
+  box-shadow: none;
 }
 input[type=text]:focus,
 input[type=password],

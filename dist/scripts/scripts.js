@@ -33,12 +33,17 @@ $(document).ready(function () {
     /**
      * Toggle slide
      * */
-    $('[data-configuration-button]').on('click', function() {
-        $('[data-configuration-slide]').toggleClass('show');
+    $('[data-slide-open]').on('click', function(e) {
+        e.preventDefault();
+        var slideNumber = $(this).data('slide-open');
+        $('[data-slide=' + slideNumber + ']').addClass('show').siblings('[data-slide]').removeClass('show');
+    });
+    $('[data-slide-close]').on('click', function() {
+        $('[data-slide]').removeClass('show');
     });
     $(document).keydown(function(e) {
         if (e.keyCode == 27) { /** Press Esc*/
-            $('[data-configuration-slide]').removeClass('show');
+            $('[data-slide]').removeClass('show');
         }
     });
 

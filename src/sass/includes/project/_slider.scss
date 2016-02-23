@@ -61,6 +61,30 @@
     width: 8%;
   }
 }
+.slider_body{
+  &.slider_body__col{
+    padding: 20px;
+  }
+}
+
+.slider_delete{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #5d5d5d;
+  font-family: open_sanssemibold, sans-serif;
+  font-size: 14px;
+  width: 64px;
+  height: 64px;
+  padding-top: 44px;
+  text-align: center;
+  z-index: 3;
+  background-color: #dcdcdc;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAABNElEQVRIS+2VQUrFMBCGO8EiggjiU7yECxER3bhx6wFKSUo3PVSXSXMCT+BGBUEXXkJBQURQqcwvLlrqe62J0vdW6XLm7/91pj8JRZ5PURRxn7Qsy9rHgnxEUsrjKIrWBrQvxphzl48v6ADAep8ZgGdr7dWfQUqpDQBHrhddfSK60Fo/NbqZiZRShwAmLiNXn4getdaXM6Asy/YAbAFYcpn49onok5kfqqq6aSdK03RfCLHta+KrY+Z7a+21Vxh8TX/TLQ6UJMkkjuMdAKtjfPm0BxG91nV9R0qpEwAr84C0iSN6WwgIwDvleb7JzLvMvDyPqYQQH0KI2x9hkFKejgkzxpz1ngxdUFfU1Lu1b4O++pDH4EQB1PyLsLoohCGEoT3rQhj+HYYxrguvayKA+jbQXd0XDi5PPlS5T4MAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 50% 8px;
+  cursor: pointer;
+}
 /*
 ** END SLIDER
 */

@@ -73,16 +73,21 @@
   }
 }
 .rules_payment_title{
-  color: #ffb600;
   font-size: 11px;
   font-family: open_sanssemibold, sans-serif;
   margin-bottom: 8px;
+  &.rules_payment_title__orange{
+    color: #ffb600;
+  }
+  &.rules_payment_title__gray{
+    color: #5d5d5d;
+  }
 }
 .rules_payment_list{
   padding: 4px;
   border: 1px dashed #acacac;
   min-height: 160px;
-  max-height: 320px;
+  max-height: 30vh;
   overflow-y: auto;
   &.rules_payment_list__numeric{
     padding-left: 25px;
@@ -126,7 +131,11 @@
     top: 50%;
     @include transform(translateY(-50%));
   }
-  &.checked{
+  &.rules_payment_item__checkbox{
+    min-height: 40px;
+    padding: 5px;
+  }
+  &.tick{
     &:before{
       right: 10px;
       width: 14px;

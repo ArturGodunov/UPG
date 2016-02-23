@@ -11,18 +11,18 @@
     <header class="header clr">
       <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
         <div class="header_top">
-          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" title="Log off" class="log_off">Log off</a>
+          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" class="log_off">Log off</a>
         </div>
         <nav class="menu">
           <ul class="menu_list">
-            <li class="menu_item"><a href="/" title="Rules" class="menu_link active">Rules</a></li>
-            <li class="menu_item"><a href="/" title="Processors" class="menu_link">Processors</a></li>
-            <li class="menu_item"><a href="/" title="Transactions" class="menu_link">Transactions</a></li>
-            <li class="menu_item"><a href="/" title="Reports" class="menu_link">Reports</a></li>
-            <li class="menu_item"><a href="/" title="Logs" class="menu_link">Logs</a></li>
-            <li class="menu_item"><a href="/" title="Users" class="menu_link">Users</a></li>
-            <li class="menu_item"><a href="/" title="Configuration" class="menu_link">Configuration</a></li>
-            <li class="menu_item"><a href="/" title="License" class="menu_link">License</a></li>
+            <li class="menu_item"><a href="/" class="menu_link active">Rules</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Processors</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Transactions</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Reports</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Logs</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Users</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Configuration</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">License</a></li>
           </ul>
         </nav>
       </div>
@@ -261,7 +261,7 @@
     <section class="rules_description col-6">
       <div class="wrapper wrapper__half_right clr">
         <h2 class="rules_title">Rule #1</h2>
-        <button data-configuration-button class="button button__small button__yellow button__edit">Edit</button>
+        <button data-slide-open="1" class="button button__small button__yellow button__edit">Edit</button>
         <button class="button button__small button__red button__delete m-l-sm">Delete</button>
         <h5 class="rules_subtitle">Rule Name</h5>
         <div class="rules_name">Best Profit</div>
@@ -285,26 +285,26 @@
         <h5 class="rules_subtitle text-upper">Payment Processors</h5>
         <div class="rules_payment_wrap">
           <div class="rules_payment rules_payment__available">
-            <div class="rules_payment_title">Available</div>
+            <div class="rules_payment_title rules_payment_title__orange">Available</div>
             <ul class="rules_payment_list">
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
-              <li class="rules_payment_item checked button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
+              <li class="rules_payment_item tick button_activation">Authorize.net</li>
             </ul>
           </div>
           <div class="rules_payment_arrow rules_payment_arrow__right"></div>
           <div class="rules_payment_arrow rules_payment_arrow__left"></div>
           <div class="rules_payment rules_payment__assigned">
-            <div class="rules_payment_title">Assigned</div>
+            <div class="rules_payment_title rules_payment_title__orange">Assigned</div>
             <ul class="rules_payment_list rules_payment_list__numeric">
               <li class="rules_payment_item button_activation active">Authorize.net
                 <div class="arrow arrow__up"></div>
@@ -363,19 +363,19 @@
         </div>
         <div class="right m-t m-b-xl">
           <button class="button button__middle button__transparent">cancel</button>
-          <button class="button button__middle button__yellow m-l-sm">safe</button>
+          <button class="button button__middle button__yellow m-l-xs">safe</button>
         </div>
       </div>
     </section>
-    <section data-configuration-slide class="slider">
-      <div data-configuration-button class="slider_close button_activation"></div>
+    <section data-slide="1" class="slider">
+      <div data-slide-close class="slider_close button_activation"></div>
       <section class="panel_top panel_top__slider">
         <form>
           <div class="row">
             <div class="col-2">
               <h3 class="panel_title panel_title__dark">configuration</h3>
             </div>
-            <div class="col-2"><a href class="panel_subtitle panel_subtitle__dark panel_subtitle__link">Code Mapping</a></div>
+            <div class="col-2"><a href data-slide-open="2" class="panel_subtitle panel_subtitle__dark panel_subtitle__link">Code Mapping</a></div>
           </div>
           <div class="row m-t-md">
             <div class="col-2">
@@ -686,8 +686,379 @@
             <div class="body_row body_row__slider">
               <div class="m-t-sm text-right">
                 <button class="button button__middle button__transparent">cancel</button>
-                <button class="button button__middle button__grey m-l-sm">safe</button>
+                <button class="button button__middle button__grey m-l-xs">safe</button>
               </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section data-slide="2" class="slider">
+      <div data-slide-close class="slider_close button_activation"></div>
+      <div class="slider_delete button_activation">Delete</div>
+      <section class="panel_top panel_top__slider">
+        <form>
+          <div class="row">
+            <div class="col-2"><a href data-slide-open="1" class="panel_subtitle panel_subtitle__dark panel_subtitle__link">configuration</a></div>
+            <div class="col-2">
+              <h3 class="panel_title panel_title__dark">Code Mapping</h3>
+            </div>
+          </div>
+          <div class="row m-t-md">
+            <div class="col-2">
+              <h5 class="panel_subtitle panel_subtitle__dark m-t-lg">Authorize.net</h5>
+            </div>
+            <div class="col-2">
+              <div data-select class="label">
+                <div class="panel_subtitle">Transaction Status</div>
+                <select class="select">
+                  <option selected></option>
+                </select>
+                <div class="select_pseudo">Sandbox</div>
+                <ul class="select_list">
+                  <li data-select-item class="select_item body_row">Sandbox0</li>
+                  <li data-select-item class="select_item body_row">Sandbox1</li>
+                  <li data-select-item class="select_item body_row">Sandbox2</li>
+                  <li data-select-item class="select_item body_row">Sandbox3</li>
+                  <li data-select-item class="select_item body_row">Sandbox4</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2">
+              <label for="input_3" class="label">
+                <div class="panel_subtitle">Code</div>
+                <input id="input_3" placeholder="" type="text" class="input">
+              </label>
+            </div>
+          </div>
+          <div class="row m-t-sm">
+            <div class="right">
+              <button class="button button__middle button__grey button__small_height">add</button>
+            </div>
+            <div class="col-offset-2 m-r-xxl">
+              <label for="input_4" class="label">
+                <div class="panel_subtitle">Description</div>
+                <input id="input_4" placeholder="" type="text" class="input">
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="slider_content">
+        <div class="slider_body slider_body__col">
+          <form>
+            <div class="col-3">
+              <div class="rules_payment_title rules_payment_title__gray">Approved</div>
+              <ul class="rules_payment_list">
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <div class="rules_payment_title rules_payment_title__gray">Approved</div>
+              <ul class="rules_payment_list">
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <div class="rules_payment_title rules_payment_title__gray">Approved</div>
+              <ul class="rules_payment_list">
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <div class="rules_payment_title rules_payment_title__gray">Approved</div>
+              <ul class="rules_payment_list">
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+                <li class="rules_payment_item rules_payment_item__checkbox button_activation">
+                  <label class="label table_text">
+                    <input type="checkbox" class="checkbox">
+                    <div class="checkbox_img checkbox_img__small checkbox_img__light"></div><span class="checkbox_label checkbox_label__simple">Insufficient Funds. The card does not have enough funds to cover the transaction.</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="clr"></div>
+            <div class="m-t-lg text-right">
+              <button class="button button__middle button__transparent">cancel</button>
+              <button class="button button__middle button__grey m-l-xs">safe</button>
             </div>
           </form>
         </div>
