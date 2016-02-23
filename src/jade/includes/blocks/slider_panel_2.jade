@@ -1,0 +1,31 @@
+block slider_panel_2
+   section.panel_top.panel_top__slider
+      form
+         .row
+            .col-2
+               a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href data-slide-open='1') configuration
+            .col-2
+               h3.panel_title.panel_title__dark Code Mapping
+         .row.m-t-md
+            .col-2
+               h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
+            .col-2
+               div.label(data-select)
+                  .panel_subtitle Transaction Status
+                  select.select
+                     option(selected)
+                  .select_pseudo Sandbox
+                  ul.select_list
+                     - for (var i=0; i < 5; i++)
+                        li.select_item.body_row(data-select-item) Sandbox#{i}
+            .col-2
+               label.label(for='input_3')
+                  .panel_subtitle Code
+                  input.input(id='input_3' placeholder='' type='text')
+         .row.m-t-sm
+            .right
+               button.button.button__middle.button__grey.button__small_height add
+            .col-offset-2.m-r-xxl
+               label.label(for='input_4')
+                  .panel_subtitle Description
+                  input.input(id='input_4' placeholder='' type='text')
