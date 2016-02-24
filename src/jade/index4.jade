@@ -1,0 +1,40 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body.footer
+
+        include includes/blocks/header
+
+        block panel_top_configuration
+            section.panel_top.panel_top__bottom_md
+                .wrapper
+                    h2.panel_title.panel_title__dark System configuration
+                    .row.m-t
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Configuration Set
+                                select.select
+                                    option(selected)
+                                .select_pseudo Sandbox
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) Sandbox#{i}
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Application Area
+                                select.select
+                                    option(selected)
+                                .select_pseudo Gateway
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) Gateway#{i}
+
+        block configuration
+            section.configuration
+
+                include includes/blocks/slider_content_1
+
+    include includes/blocks/scripts

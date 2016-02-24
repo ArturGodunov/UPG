@@ -800,6 +800,9 @@ body {
   padding-bottom: 20px;
   padding-right: 40px;
 }
+.panel_top.panel_top__bottom_md {
+  padding-bottom: 15px;
+}
 
 .panel_title {
   text-transform: uppercase;
@@ -1479,6 +1482,12 @@ body {
 /*
 ** END TOOLTIP
 */
+.configuration {
+  height: calc(100vh - 280px);
+  overflow-y: auto;
+  background: #fff;
+}
+
 /*****************************************************************************
 *
 *                                   COSMETIC

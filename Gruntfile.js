@@ -13,6 +13,7 @@ module.exports = function(grunt) {
                     'dist/index1.html': 'src/jade/index1.jade',
                     'dist/index2.html': 'src/jade/index2.jade',
 					'dist/index3.html': 'src/jade/index3.jade',
+					'dist/index4.html': 'src/jade/index4.jade',
 					'dist/popup1.html': 'src/jade/includes/blocks/popup1.jade'
 				}
 			}
