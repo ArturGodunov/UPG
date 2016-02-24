@@ -51,7 +51,8 @@
 .ui-front {
   z-index: 100;
 }
-
+/* END Layout helpers
+----------------------------------*/
 
 .ui-tooltip {
   position: absolute;
@@ -76,6 +77,31 @@
     border-bottom: 1px solid #777d7f;
     @include transform(rotate(45deg));
   }
+}
+.ui-tooltip-content{
+  min-width: 450px;
+  padding: 15px 0;
+}
+
+.tooltip_col_1,
+.tooltip_col_2{
+  float: left;
+  line-height: 1.7;
+}
+.tooltip_col_1{
+  width: 30%;
+  font-family: open_sanssemibold, sans-serif;
+  text-align: right;
+  font-variant: small-caps;
+}
+.tooltip_col_2{
+  width: 70%;
+  padding-left: 10px;
+}
+
+.tooltip_link{
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*
 ** END TOOLTIP

@@ -47,7 +47,8 @@ body{
 
 .clr,
 .row,
-.body_row{
+.body_row,
+.ui-tooltip-content{
   &::before, &::after {
       content: " ";
       display: table;
@@ -123,6 +124,7 @@ body{
   }
   &.button__middle{
     min-width: 80px;
+    padding: 0 15px;
   }
   &.button__small{
     width: 32px;
