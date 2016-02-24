@@ -1,0 +1,82 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body.footer
+
+        include includes/blocks/header
+
+        block panel_top_configuration
+            section.panel_top.panel_top__bottom_md
+                .wrapper
+                    h2.panel_title.panel_title__dark Error log records
+                    .row.m-t
+                        .col-1
+                            div.label(data-select)
+                                .panel_subtitle Page Size
+                                select.select
+                                    option(selected)
+                                .select_pseudo 25
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) #{i+25}
+                        .col-1
+                            div.label(data-select)
+                                .panel_subtitle Page
+                                select.select
+                                    option(selected)
+                                .select_pseudo 1
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) #{i+1}
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Severity Type
+                                select.select
+                                    option(selected)
+                                .select_pseudo All
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) All#{i}
+                        .col-1
+                            label.label(for='input_1')
+                                .panel_subtitle Page
+                                input.input.input__disabled(id='input_1' type='text' disabled='disabled')
+
+        block error_log
+            section.main_content
+
+                section.slider_content.slider_content__error
+                    .head.head__light
+                        .wrapper
+                            each val in [['Log id','Title'],['Message','Notification'],['stack trace','Notification'],['Date','Date/Time'],['Severity','Status'],['Machine','Name'],['Total','Title'],['process','Name']]
+                                .slider_col
+                                    .head_text.head_text__title= val[0]
+                                    .head_text.head_text__subtitle= val[1]
+                    .slider_body
+                        form
+                            - for (var i=0; i < 7; i++)
+                                .body_row.body_row__slider_padding_sm.body_row__error
+                                    .wrapper.flex
+                                        .slider_col
+                                            .table_text 6
+                                        .slider_col
+                                            textarea.textarea
+                                        .slider_col
+                                            textarea.textarea
+                                        .slider_col
+                                            .table_text
+                                                div 07/08/2015
+                                                .text-nowrap.m-t-xs 05:40:43 AM
+                                        .slider_col
+                                            .table_text Error
+                                        .slider_col
+                                            .table_text.text-upper SERVER
+                                        .slider_col
+                                            .table_text 17616
+                                        .slider_col
+                                            .table_text w3wp.exe
+
+    include includes/blocks/scripts

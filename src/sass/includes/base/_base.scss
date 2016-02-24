@@ -78,8 +78,18 @@ body{
 .col-8{
   float: left;
 }
+.col-1{
+  width: 8.33%;
+  & + .col-1{
+    margin-left: 10px;
+  }
+  & + .col-2{
+    margin-left: 40px;
+  }
+}
 .col-2{
   width: 16.66%;
+  & + .col-1,
   & + .col-2{
     margin-left: 40px;
   }
@@ -233,6 +243,9 @@ body{
     background: #fff;
     border: 1px solid #c7c7c7;
   }
+  &.input__disabled{
+    background: #ffe8b0;
+  }
 }
 .textarea,
 .textarea:focus{
@@ -280,6 +293,12 @@ body{
     font-size: 10px;
     padding-top: 0;
   }
+}
+
+.main_content{
+  height: calc(100vh - 280px);
+  overflow-y: auto;
+  background: #fff;
 }
 /*
 ** END COMMON
