@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPG</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="footer">
+    <header class="header clr">
+      <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
+        <div class="header_top">
+          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" class="log_off">Log off</a>
+        </div>
+        <nav class="menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a href="/" class="menu_link active">Rules</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Processors</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Transactions</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Reports</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Logs</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Users</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Configuration</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">License</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="panel_top panel_top__bottom_md">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Transaction Types</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">All</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">All0</li>
+                <li data-select-item class="select_item body_row">All1</li>
+                <li data-select-item class="select_item body_row">All2</li>
+                <li data-select-item class="select_item body_row">All3</li>
+                <li data-select-item class="select_item body_row">All4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Transaction Statuses</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">All</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">All0</li>
+                <li data-select-item class="select_item body_row">All1</li>
+                <li data-select-item class="select_item body_row">All2</li>
+                <li data-select-item class="select_item body_row">All3</li>
+                <li data-select-item class="select_item body_row">All4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Processors</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">All</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">All0</li>
+                <li data-select-item class="select_item body_row">All1</li>
+                <li data-select-item class="select_item body_row">All2</li>
+                <li data-select-item class="select_item body_row">All3</li>
+                <li data-select-item class="select_item body_row">All4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <label for="input_1" class="label">
+              <div class="panel_subtitle">Processors Transaction ID</div>
+              <input id="input_1" type="text" class="input">
+            </label>
+          </div>
+        </div>
+        <div class="row m-t-xs">
+          <div class="col-1">
+            <label for="input_2" class="label">
+              <div class="panel_subtitle">Date From</div>
+              <input id="input_2" type="text" placeholder="From" class="input">
+            </label>
+          </div>
+          <div class="col-1">
+            <label for="input_3" class="label">
+              <div class="panel_subtitle">Date To</div>
+              <input id="input_3" type="text" placeholder="To" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_4" class="label">
+              <div class="panel_subtitle">From Amount</div>
+              <input id="input_4" type="text" placeholder="From" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_5" class="label">
+              <div class="panel_subtitle">To Amount</div>
+              <input id="input_5" type="text" placeholder="To" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_6" class="label">
+              <div class="panel_subtitle">Order ID</div>
+              <input id="input_6" type="text" placeholder="" class="input">
+            </label>
+          </div>
+        </div>
+        <div class="row m-t-md">
+          <div class="col-1">
+            <div data-select class="label">
+              <div class="panel_subtitle">Page Size</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">25</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">25</li>
+                <li data-select-item class="select_item body_row">26</li>
+                <li data-select-item class="select_item body_row">27</li>
+                <li data-select-item class="select_item body_row">28</li>
+                <li data-select-item class="select_item body_row">29</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1">
+            <label for="input_7" class="label">
+              <div class="panel_subtitle">Page</div>
+              <div class="input_pagination_b">
+                <button class="input_pagination input_pagination__prev"></button>
+                <input id="input_7" type="text" placeholder="12" class="input input__paginat">
+                <button class="input_pagination input_pagination__next"></button>
+              </div>
+            </label>
+          </div>
+          <div class="button_right_b m-t-sm">
+            <button class="button button__big button__grey">Search</button>
+            <button class="button button__big button__grey m-l-xs">clear</button>
+            <button class="button button__big button__grey m-l-xs">collapse all records</button>
+            <button class="button button__big button__grey m-l-xs">expand all records</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_content main_content__mid">
+      <section class="slider_content slider_content__transactions">
+        <div class="head head__light">
+          <div class="wrapper">
+            <div class="slider_col">
+              <div class="head_text head_text__title">Id</div>
+              <div class="head_text head_text__subtitle">Order</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">code</div>
+              <div class="head_text head_text__subtitle">Authorization</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Authorization</div>
+              <div class="head_text head_text__subtitle">Transaction ID</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Processor</div>
+              <div class="head_text head_text__subtitle">Title</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Type</div>
+              <div class="head_text head_text__subtitle">Title</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Status</div>
+              <div class="head_text head_text__subtitle">Title</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Amount</div>
+              <div class="head_text head_text__subtitle">Сurrency ($)</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Date</div>
+              <div class="head_text head_text__subtitle">Date/Time</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider_body">
+          <form>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text">182345123452345678</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-upper">X6TYWJ</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2235575474</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Authorization</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">Approved</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">25.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">
+                    <div>07/08/2015</div>
+                    <div class="text-nowrap m-t-xs">05:40:43 AM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="scripts/libs/jquery-1.11.1.min.js"></script>
+  <script src="scripts/libs/jquery.colorbox.min.js"></script>
+  <script src="scripts/libs/jquery-ui.tooltip.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</html>
