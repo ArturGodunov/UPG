@@ -336,6 +336,9 @@ body{
   &.main_content__gray{
     background: #ececec;
   }
+  &.main_content__small{
+    height: calc(100vh - 237px);
+  }
 }
 /*
 ** END COMMON

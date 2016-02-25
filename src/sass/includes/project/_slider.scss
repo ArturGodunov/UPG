@@ -77,6 +77,11 @@
       }
     }
   }
+  &.slider_content__users{
+    .slider_col{
+      width: 12%;
+    }
+  }
 }
 .slider_body{
   &.slider_body__col{

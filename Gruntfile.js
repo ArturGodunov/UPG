@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 					'dist/index5.html': 'src/jade/index5.jade',
 					'dist/index6.html': 'src/jade/index6.jade',
 					'dist/index7.html': 'src/jade/index7.jade',
+					'dist/index8.html': 'src/jade/index8.jade',
 					'dist/popup1.html': 'src/jade/includes/blocks/popup1.jade',
 					'dist/popup2.html': 'src/jade/includes/blocks/popup2.jade',
 					'dist/popup3.html': 'src/jade/includes/blocks/popup3.jade'

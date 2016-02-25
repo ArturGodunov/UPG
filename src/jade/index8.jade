@@ -1,0 +1,44 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body.footer(data-welcome)
+
+        include includes/blocks/header
+
+        block panel_top_configuration
+            section.panel_top.panel_top__bottom_md
+                .wrapper.clr
+                    h2.panel_title.panel_title__dark Users
+                    .right
+                        button.button.button__big.button__grey create new user
+
+        block transactions
+            section.main_content.main_content__small
+
+                section.slider_content.slider_content__users
+                    .head.head__light
+                        .wrapper
+                            each val in [['User','Title'],['Email','Title'],['role(s)','Status'],['Actions','Type']]
+                                .slider_col
+                                    .head_text.head_text__title= val[0]
+                                    .head_text.head_text__subtitle= val[1]
+                    .slider_body
+                        form
+                            - for (var i=0; i < 3; i++)
+                                .body_row.body_row__padding_sm.body_row__error
+                                    .wrapper
+                                        .slider_col
+                                            .table_text.text-upper admin
+                                        .slider_col
+                                            .table_text mreutov@gmail.com
+                                        .slider_col
+                                            .table_text.text-upper System
+                                        .slider_col
+                                            a.table_text.table_text__inline_link(href) Edit
+                                            if (i != 0)
+                                                a.table_text.table_text__inline_link(href) Delete
+
+    include includes/blocks/scripts

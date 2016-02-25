@@ -78,6 +78,13 @@
   line-height: 1.1;
   font-family: open_sanssemibold, sans-serif;
   font-variant: small-caps;
+  &.table_text__inline_link{
+    display: inline-block;
+    vertical-align: top;
+    & + .table_text__inline_link{
+      margin-left: 10px;
+    }
+  }
 }
 /*
 ** END TABLE

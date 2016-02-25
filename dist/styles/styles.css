@@ -507,6 +507,9 @@ body {
 .main_content.main_content__gray {
   background: #ececec;
 }
+.main_content.main_content__small {
+  height: calc(100vh - 237px);
+}
 
 /*
 ** END COMMON
@@ -1410,6 +1413,9 @@ body {
 .slider_content.slider_content__total .slider_col:nth-child(6), .slider_content.slider_content__total .slider_col:nth-child(8) {
   width: 8%;
 }
+.slider_content.slider_content__users .slider_col {
+  width: 12%;
+}
 
 .slider_body.slider_body__col {
   padding: 20px;
@@ -1556,6 +1562,13 @@ body {
   line-height: 1.1;
   font-family: open_sanssemibold, sans-serif;
   font-variant: small-caps;
+}
+.table_text.table_text__inline_link {
+  display: inline-block;
+  vertical-align: top;
+}
+.table_text.table_text__inline_link + .table_text__inline_link {
+  margin-left: 10px;
 }
 
 /*
