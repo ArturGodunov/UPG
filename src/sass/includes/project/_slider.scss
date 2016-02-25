@@ -68,6 +68,15 @@
       }
     }
   }
+  &.slider_content__total{
+    .slider_col{
+      width: 14%;
+      &:nth-child(6),
+      &:nth-child(8){
+        width: 8%;
+      }
+    }
+  }
 }
 .slider_body{
   &.slider_body__col{
@@ -104,6 +113,13 @@
   }
   &:nth-child(9){
     width: 8%;
+  }
+  &.slider_col__red{
+    margin: -14px 0 !important;
+    .table_text{
+      line-height: 41px;
+      background: #ffc1a2;
+    }
   }
 }
 

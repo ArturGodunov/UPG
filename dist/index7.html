@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>UPG</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body data-welcome class="footer">
+    <header class="header clr">
+      <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
+        <div class="header_top">
+          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" class="log_off">Log off</a>
+        </div>
+        <nav class="menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a href="/" class="menu_link active">Rules</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Processors</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Transactions</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Reports</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Logs</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Users</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Configuration</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">License</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="panel_top panel_top__bottom_md">
+      <div class="wrapper">
+        <h2 class="panel_title panel_title__dark">Transaction Summary Report</h2>
+        <div class="row m-t">
+          <div class="col-1">
+            <label for="input_1" class="label">
+              <div class="panel_subtitle">Date From</div>
+              <input id="input_1" type="text" placeholder="From" class="input">
+            </label>
+          </div>
+          <div class="col-1">
+            <label for="input_2" class="label">
+              <div class="panel_subtitle">Date To</div>
+              <input id="input_2" type="text" placeholder="To" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Compare To</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">Pay Pal</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">Pay Pal0</li>
+                <li data-select-item class="select_item body_row">Pay Pal1</li>
+                <li data-select-item class="select_item body_row">Pay Pal2</li>
+                <li data-select-item class="select_item body_row">Pay Pal3</li>
+                <li data-select-item class="select_item body_row">Pay Pal4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right m-t-sm">
+            <button class="button button__big button__grey">refresh</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_content main_content__gray">
+      <section class="slider_content slider_content__total">
+        <div class="head head__light">
+          <div class="wrapper">
+            <div class="slider_col">
+              <div class="head_text head_text__title">Processor</div>
+              <div class="head_text head_text__subtitle">Title</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Percentage fee</div>
+              <div class="head_text head_text__subtitle">Transaction</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Fixed fee</div>
+              <div class="head_text head_text__subtitle">Transaction</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Count</div>
+              <div class="head_text head_text__subtitle">Transaction</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Sum</div>
+              <div class="head_text head_text__subtitle">Transaction</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Total Per</div>
+              <div class="head_text head_text__subtitle">Transaction Fee</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Total</div>
+              <div class="head_text head_text__subtitle">Percentage Fee</div>
+            </div>
+            <div class="slider_col">
+              <div class="head_text head_text__title">Fees Paid</div>
+              <div class="head_text head_text__subtitle">Total</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider_body">
+          <form>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error body_row__total">
+              <div class="wrapper flex">
+                <div class="slider_col">
+                  <div class="table_text text-upper text-black">total</div>
+                </div>
+                <div class="slider_col"></div>
+                <div class="slider_col"></div>
+                <div class="slider_col">
+                  <div class="table_text text-black">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-black">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-black">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-black">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text text-black">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error body_row__dark">
+              <div class="table_text">Compare to PAY PAL</div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error">
+              <div class="wrapper">
+                <div class="slider_col">
+                  <div class="table_text">Authorize.net</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">2.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.30</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">5.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">169.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">1.50</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">4.90</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">6.40</div>
+                </div>
+              </div>
+            </div>
+            <div class="body_row body_row__padding_sm body_row__error body_row__total">
+              <div class="wrapper flex">
+                <div class="slider_col"></div>
+                <div class="slider_col"></div>
+                <div class="slider_col"></div>
+                <div class="slider_col"></div>
+                <div class="slider_col">
+                  <div class="table_text text-upper text-black">Comparision Delta</div>
+                </div>
+                <div class="slider_col slider_col__red">
+                  <div class="table_text text-black">1.00</div>
+                </div>
+                <div class="slider_col">
+                  <div class="table_text">0.00</div>
+                </div>
+                <div class="slider_col slider_col__red">
+                  <div class="table_text text-black">1.00</div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="scripts/libs/jquery-1.11.1.min.js"></script>
+  <script src="scripts/libs/jquery.colorbox.min.js"></script>
+  <script src="scripts/libs/jquery-ui.tooltip.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</html>

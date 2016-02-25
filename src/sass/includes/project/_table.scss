@@ -55,6 +55,17 @@
   &.body_row__padding_sm{
     padding: 14px 0;
   }
+  &.body_row__total{
+    background: #ffe8b0;
+  }
+  &.body_row__dark{
+    background: #bdc6c9;
+    text-align: center;
+    & * {
+      color: #fff;
+      font-variant: normal;
+    }
+  }
   .slider_col{
     margin: auto;
   }
