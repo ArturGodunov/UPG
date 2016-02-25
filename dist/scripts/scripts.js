@@ -1,19 +1,21 @@
 $(document).ready(function () {
 
     /**
-     * Popup Welcom
+     * Popup Welcome
      * */
-    $.colorbox({
-        href:'popup1.html',
-        opacity: 1,
-        arrowKey: false,
-        closeButton: false,
-        onComplete: function(){
-            setTimeout(function() {
-                $.colorbox.close();
-            }, 1500)
-        }
-    });
+    if ( $('body').is('[data-welcome]') ) {
+        //$.colorbox({
+        //    href: 'popup1.html',
+        //    opacity: 1,
+        //    arrowKey: false,
+        //    closeButton: false,
+        //    onComplete: function () {
+        //        setTimeout(function () {
+        //            $.colorbox.close();
+        //        }, 1500)
+        //    }
+        //});
+    }
 
     /**
      * Popup Transaction Details
@@ -100,6 +102,7 @@ $(document).ready(function () {
             }
         },
         content:
+        '<div class="tooltip_content clr">' +
         '<div class="tooltip_col_1">' +
         '<div>Transaction ID:</div>' +
         '<div>Date:</div>' +
@@ -119,6 +122,7 @@ $(document).ready(function () {
         '<div>Address and zip five match - Y</div>' +
         '<div>Not processed - P</div>' +
         '<div>Passed - 2</div>' +
+        '</div>' +
         '</div>'
     });
 

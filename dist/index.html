@@ -4,21 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>UPG</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <style>
     body { padding-top: 20px; }
-    a { color: #ffb600; line-height: 2; }
+    a { color: #ffb600; line-height: 2;}
     a:hover { text-decoration: none; }
   </style>
   <body>
     <div class="wrapper">
       <div><a href="index1.html">Login</a></div>
       <div><a href="index2.html">Forgot password</a></div>
-      <div><a href="index3.html">Rules with configuration, code mapping</a></div>
+      <div><a href="index3.html">Rules</a></div>
       <div><a href="index4.html">System configuration</a></div>
       <div><a href="index5.html">Error log</a></div>
+      <div><a href="index6.html">Transactions</a></div>
+      <div class="m-t-md"><a data-popup-welcome href>Popup Welcome</a></div>
+      <div><a data-popup-small href>Popup Transaction Details</a></div>
+      <div><a data-popup-big href>Popup Processor Details</a></div>
     </div>
+    <script src="scripts/libs/jquery-1.11.1.min.js"></script>
+    <script src="scripts/libs/jquery.colorbox.min.js"></script>
+    <script src="scripts/libs/jquery-ui.tooltip.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script>
+      $('[data-popup-welcome]').colorbox({
+          href:'popup1.html',
+          opacity: 1,
+          arrowKey: false,
+          closeButton: false,
+          onComplete: function(){
+              setTimeout(function() {
+                  $.colorbox.close();
+              }, 1500)
+          }
+      });
+    </script>
   </body>
 </html>
