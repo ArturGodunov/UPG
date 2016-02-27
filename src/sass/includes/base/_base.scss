@@ -339,6 +339,15 @@ body{
   &.main_content__small{
     height: calc(100vh - 237px);
   }
+  &.main_content__empty{
+    height: calc(100vh - 359px);
+  }
+}
+
+.row-white{
+  padding: 15px 0;
+  text-align: right;
+  background: #fff;
 }
 /*
 ** END COMMON

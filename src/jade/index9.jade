@@ -1,0 +1,40 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body.footer(data-welcome)
+
+        include includes/blocks/header
+
+        block panel_top_configuration
+            section.panel_top.panel_top__bottom_bg
+                .wrapper
+                    h2.panel_title.panel_title__dark LICENSE
+                    .row.m-t
+                        .col-2
+                            label.label(for='input_1')
+                                .panel_subtitle Company Name
+                                input.input(id='input_1' type='text' placeholder='Perfectosoft, LLC')
+                        .col-2
+                            label.label(for='input_2')
+                                .panel_subtitle Issue Date
+                                input.input(id='input_2' type='text' placeholder='7/7/2015  01:39:16PM')
+                    .row.m-t
+                        .col-2
+                            label.label(for='input_3')
+                                .panel_subtitle Product Version
+                                input.input(id='input_3' type='text' placeholder='1.0.0.1')
+                        .col-2
+                            label.label(for='input_4')
+                                .panel_subtitle Expiration Date
+                                input.input(id='input_4' type='text' placeholder='8/6/2015  01:39:16PM')
+
+        block transactions
+            section.main_content.main_content__gray.main_content__empty
+                .row-white
+                    .wrapper
+                        button.button.button__middle.button__grey RENEW License
+
+    include includes/blocks/scripts

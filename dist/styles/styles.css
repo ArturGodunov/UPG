@@ -510,6 +510,15 @@ body {
 .main_content.main_content__small {
   height: calc(100vh - 237px);
 }
+.main_content.main_content__empty {
+  height: calc(100vh - 359px);
+}
+
+.row-white {
+  padding: 15px 0;
+  text-align: right;
+  background: #fff;
+}
 
 /*
 ** END COMMON
@@ -865,6 +874,9 @@ body {
 }
 .panel_top.panel_top__bottom_md {
   padding-bottom: 15px;
+}
+.panel_top.panel_top__bottom_bg {
+  padding-bottom: 30px;
 }
 
 .panel_title {
