@@ -16,6 +16,9 @@
   vertical-align: top;
   font-size: 22px;
   font-family: open_sanssemibold, sans-serif;
+  &.rules_title__user{
+    margin-left: 35px;
+  }
 }
 
 .rules_subtitle{
@@ -61,6 +64,9 @@
 
 .rules_payment_wrap{
   position: relative;
+  &.rules_payment_wrap__small{
+    width: 72%;
+  }
 }
 .rules_payment{
   &.rules_payment__available{

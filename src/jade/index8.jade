@@ -37,8 +37,57 @@ html(lang='en')
                                         .slider_col
                                             .table_text.text-upper System
                                         .slider_col
-                                            a.table_text.table_text__inline_link(href) Edit
+                                            a.table_text.table_text__inline_link(href data-slide-open='1') Edit
                                             if (i != 0)
                                                 a.table_text.table_text__inline_link(href) Delete
+
+        block slider_3
+            section.slider.slider__small(data-slide='1')
+                .slider_close.button_activation(data-slide-close)
+
+                section.rules_description
+                    .wrapper.wrapper__half_right.clr
+                        h2.rules_title.rules_title__user User
+                        button.button.button__small.button__grey.button__edit Edit
+                        button.button.button__small.button__red.button__delete.m-l-sm Delete
+
+                        h5.rules_subtitle User Settings
+                        .row.m-t-lg
+                            .col-4
+                                label.label(for='input_1')
+                                    .panel_subtitle User Login
+                                    input.input(id='input_1' type='text' placeholder='')
+                            .col-4
+                                label.label(for='input_2')
+                                    .panel_subtitle Email Address
+                                    input.input(id='input_2' type='text' placeholder='')
+                        .row.m-t
+                            .col-4
+                                label.label(for='input_3')
+                                    .panel_subtitle Password
+                                    input.input(id='input_3' type='text' placeholder='')
+                            .col-4
+                                label.label(for='input_4')
+                                    .panel_subtitle Confirm Password
+                                    input.input(id='input_4' type='text' placeholder='')
+
+                        h5.rules_subtitle.text-upper Roles
+                        .rules_payment_wrap.rules_payment_wrap__small
+                            .clr
+                                .rules_payment.rules_payment__available
+                                    .rules_payment_title.rules_payment_title__gray Avalible Roles
+                                    ul.rules_payment_list
+                                        - for (var i=0; i < 12; i++)
+                                            li.rules_payment_item.button_activation User#{i}
+                                .rules_payment_arrow.rules_payment_arrow__right
+                                .rules_payment_arrow.rules_payment_arrow__left
+                                .rules_payment.rules_payment__assigned
+                                    .rules_payment_title.rules_payment_title__gray Assigned roles
+                                    ul.rules_payment_list
+                                        - for (var i=0; i < 13; i++)
+                                            li.rules_payment_item.button_activation User#{i}
+                            .text-right.m-t.m-b-xl
+                                button.button.button__middle.button__transparent cancel
+                                button.button.button__middle.button__grey.m-l-xs safe
 
     include includes/blocks/scripts

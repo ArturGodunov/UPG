@@ -75,6 +75,7 @@ body{
 .col-1,
 .col-2,
 .col-3,
+.col-4,
 .col-6,
 .col-8{
   float: left;
@@ -99,6 +100,12 @@ body{
   width: 25%;
   & + .col-3{
     padding-left: 20px;
+  }
+}
+.col-4{
+  width: 33.33%;
+  & + .col-4{
+    margin-left: 40px;
   }
 }
 .col-6{

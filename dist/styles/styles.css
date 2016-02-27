@@ -226,6 +226,7 @@ body {
 .col-1,
 .col-2,
 .col-3,
+.col-4,
 .col-6,
 .col-8 {
   float: left;
@@ -253,6 +254,13 @@ body {
 }
 .col-3 + .col-3 {
   padding-left: 20px;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+.col-4 + .col-4 {
+  margin-left: 40px;
 }
 
 .col-6 {
@@ -1044,6 +1052,9 @@ body {
   font-size: 22px;
   font-family: open_sanssemibold, sans-serif;
 }
+.rules_title.rules_title__user {
+  margin-left: 35px;
+}
 
 .rules_subtitle {
   color: #005c7b;
@@ -1090,6 +1101,9 @@ body {
 
 .rules_payment_wrap {
   position: relative;
+}
+.rules_payment_wrap.rules_payment_wrap__small {
+  width: 72%;
 }
 
 .rules_payment.rules_payment__available {
@@ -1382,6 +1396,9 @@ body {
   -webkit-transform: translateX(101%);
   -ms-transform: translateX(101%);
   transform: translateX(101%);
+}
+.slider.slider__small {
+  min-width: 700px;
 }
 .slider.show {
   -webkit-transform: translateX(0);
