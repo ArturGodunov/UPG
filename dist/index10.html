@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>UPG</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body data-welcome class="footer">
+    <header class="header clr">
+      <div class="wrapper"><a href="/" class="logo_link"><img src="images/black_logo__small.png" alt="Unified Payment Gateway" class="logo"></a>
+        <div class="header_top">
+          <div class="greeting">Hello, <a class="greeting_name" href="#">Admin</a>!</div><a href="index1.html" class="log_off">Log off</a>
+        </div>
+        <nav class="menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a href="/" class="menu_link active">Rules</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Processors</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Transactions</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Reports</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Logs</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Users</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">Configuration</a></li>
+            <li class="menu_item"><a href="/" class="menu_link">License</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="panel_top panel_top__bottom_md">
+      <div class="wrapper">
+        <h2 class="panel_title panel_title__dark">PAYPAL</h2>
+        <div class="row m-t">
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Transaction Type</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">Sandbox</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">Authorization0</li>
+                <li data-select-item class="select_item body_row">Authorization1</li>
+                <li data-select-item class="select_item body_row">Authorization2</li>
+                <li data-select-item class="select_item body_row">Authorization3</li>
+                <li data-select-item class="select_item body_row">Authorization4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Test Credit Card</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo">Gateway</div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">None0</li>
+                <li data-select-item class="select_item body_row">None1</li>
+                <li data-select-item class="select_item body_row">None2</li>
+                <li data-select-item class="select_item body_row">None3</li>
+                <li data-select-item class="select_item body_row">None4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <label for="input_1" class="label">
+              <div class="panel_subtitle">Transaction Amount</div>
+              <input id="input_1" type="text" placeholder="25.00" class="input">
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_content">
+      <div class="wrapper">
+        <div class="row m-t-lg">
+          <div class="col-2">
+            <label for="input_2" class="label">
+              <div class="panel_subtitle">First Name</div>
+              <input id="input_2" type="text" placeholder="" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_3" class="label">
+              <div class="panel_subtitle">Card Number</div>
+              <input id="input_3" type="text" placeholder="" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_4" class="label">
+              <div class="panel_subtitle">Country</div>
+              <input id="input_4" type="text" placeholder="" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_5" class="label">
+              <div class="panel_subtitle">Street Address1</div>
+              <input id="input_5" type="text" placeholder="" class="input">
+            </label>
+          </div>
+        </div>
+        <div class="row m-t">
+          <div class="col-2">
+            <label for="input_6" class="label">
+              <div class="panel_subtitle">Last Name</div>
+              <input id="input_6" type="text" placeholder="" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Expiration Month</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo"></div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">Expiration Month0</li>
+                <li data-select-item class="select_item body_row">Expiration Month1</li>
+                <li data-select-item class="select_item body_row">Expiration Month2</li>
+                <li data-select-item class="select_item body_row">Expiration Month3</li>
+                <li data-select-item class="select_item body_row">Expiration Month4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">State</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo"></div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">State0</li>
+                <li data-select-item class="select_item body_row">State1</li>
+                <li data-select-item class="select_item body_row">State2</li>
+                <li data-select-item class="select_item body_row">State3</li>
+                <li data-select-item class="select_item body_row">State4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <label for="input_7" class="label">
+              <div class="panel_subtitle">Street Address2</div>
+              <input id="input_7" type="text" placeholder="" class="input">
+            </label>
+          </div>
+        </div>
+        <div class="row m-t">
+          <div class="col-2 col-offset-2">
+            <div data-select class="label">
+              <div class="panel_subtitle">Expiration Year</div>
+              <select class="select">
+                <option selected></option>
+              </select>
+              <div class="select_pseudo"></div>
+              <ul class="select_list">
+                <li data-select-item class="select_item body_row">Expiration Year0</li>
+                <li data-select-item class="select_item body_row">Expiration Year1</li>
+                <li data-select-item class="select_item body_row">Expiration Year2</li>
+                <li data-select-item class="select_item body_row">Expiration Year3</li>
+                <li data-select-item class="select_item body_row">Expiration Year4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <label for="input_8" class="label">
+              <div class="panel_subtitle">Zip Code</div>
+              <input id="input_8" type="text" placeholder="" class="input">
+            </label>
+          </div>
+          <div class="col-2">
+            <label for="input_9" class="label">
+              <div class="panel_subtitle">City</div>
+              <input id="input_9" type="text" placeholder="" class="input">
+            </label>
+          </div>
+        </div>
+        <div class="row m-t">
+          <div class="col-2 col-offset-2">
+            <label for="input_10" class="label">
+              <div class="panel_subtitle">CVV Number</div>
+              <input id="input_10" type="text" placeholder="" class="input">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row-white">
+        <div class="wrapper">
+          <button class="button button__middle button__transparent">cancel</button>
+          <button class="button button__middle button__grey m-l-xs">Process</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="scripts/libs/jquery-1.11.1.min.js"></script>
+  <script src="scripts/libs/jquery.colorbox.min.js"></script>
+  <script src="scripts/libs/jquery-ui.tooltip.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</html>

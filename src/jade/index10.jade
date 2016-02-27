@@ -1,0 +1,116 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang='en')
+    include includes/blocks/head
+    body.footer(data-welcome)
+
+        include includes/blocks/header
+
+        block panel_top_configuration
+            section.panel_top.panel_top__bottom_md
+                .wrapper
+                    h2.panel_title.panel_title__dark PAYPAL
+                    .row.m-t
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Transaction Type
+                                select.select
+                                    option(selected)
+                                .select_pseudo Sandbox
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) Authorization#{i}
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Test Credit Card
+                                select.select
+                                    option(selected)
+                                .select_pseudo Gateway
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) None#{i}
+                        .col-2
+                            label.label(for='input_1')
+                                .panel_subtitle Transaction Amount
+                                input.input(id='input_1' type='text' placeholder='25.00')
+
+        block configuration
+            section.main_content
+
+                .wrapper
+                    .row.m-t-lg
+                        .col-2
+                            label.label(for='input_2')
+                                .panel_subtitle First Name
+                                input.input(id='input_2' type='text' placeholder='')
+                        .col-2
+                            label.label(for='input_3')
+                                .panel_subtitle Card Number
+                                input.input(id='input_3' type='text' placeholder='')
+                        .col-2
+                            label.label(for='input_4')
+                                .panel_subtitle Country
+                                input.input(id='input_4' type='text' placeholder='')
+                        .col-2
+                            label.label(for='input_5')
+                                .panel_subtitle Street Address1
+                                input.input(id='input_5' type='text' placeholder='')
+                    .row.m-t
+                        .col-2
+                            label.label(for='input_6')
+                                .panel_subtitle Last Name
+                                input.input(id='input_6' type='text' placeholder='')
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle Expiration Month
+                                select.select
+                                    option(selected)
+                                .select_pseudo
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) Expiration Month#{i}
+                        .col-2
+                            div.label(data-select)
+                                .panel_subtitle State
+                                select.select
+                                    option(selected)
+                                .select_pseudo
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) State#{i}
+                        .col-2
+                            label.label(for='input_7')
+                                .panel_subtitle Street Address2
+                                input.input(id='input_7' type='text' placeholder='')
+                    .row.m-t
+                        .col-2.col-offset-2
+                            div.label(data-select)
+                                .panel_subtitle Expiration Year
+                                select.select
+                                    option(selected)
+                                .select_pseudo
+                                ul.select_list
+                                    - for (var i=0; i < 5; i++)
+                                        li.select_item.body_row(data-select-item) Expiration Year#{i}
+                        .col-2
+                            label.label(for='input_8')
+                                .panel_subtitle Zip Code
+                                input.input(id='input_8' type='text' placeholder='')
+                        .col-2
+                            label.label(for='input_9')
+                                .panel_subtitle City
+                                input.input(id='input_9' type='text' placeholder='')
+                    .row.m-t
+                        .col-2.col-offset-2
+                            label.label(for='input_10')
+                                .panel_subtitle CVV Number
+                                input.input(id='input_10' type='text' placeholder='')
+
+                .row-white
+                    .wrapper
+                        button.button.button__middle.button__transparent cancel
+                        button.button.button__middle.button__grey.m-l-xs Process
+
+    include includes/blocks/scripts
