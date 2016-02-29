@@ -393,9 +393,31 @@ body {
 
 .select_pseudo {
   cursor: pointer;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAnElEQVRIS+2RsQkEIRBF/4KpVuA2YR+2oIltGViDfViBoRUYC3fMwcIeHDe7yEXnT0zG95k3W631gR9mWwWc3aWIM4SlaF5RzhmllI8gYwystV9L2BuMMZBSQmvtDaS1hvceQoi5Avrde0eM8fVSpJQIIUApNa/oINAGtAnFOYd931k4DbCKzpTjFuT+am4VXIWe51YBa20p+gNFT81nduHPKem7AAAAAElFTkSuQmCC");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
+  position: relative;
+}
+.select_pseudo:before, .select_pseudo:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.select_pseudo:before {
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: #dcdcdc;
+}
+.select_pseudo:after {
+  top: 50%;
+  right: 8px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #5d5d5d;
 }
 
 .select_list {
