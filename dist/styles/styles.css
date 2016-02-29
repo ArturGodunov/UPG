@@ -456,6 +456,7 @@ body {
 }
 
 .input_pagination_b {
+  display: block;
   font-size: 0;
 }
 

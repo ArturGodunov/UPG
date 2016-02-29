@@ -16,7 +16,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Transaction Types
                                 select.select
-                                    option(selected)
+                                    option(selected) All
                                 .select_pseudo All
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -25,7 +25,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Transaction Statuses
                                 select.select
-                                    option(selected)
+                                    option(selected) All
                                 .select_pseudo All
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -34,52 +34,52 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Processors
                                 select.select
-                                    option(selected)
+                                    option(selected) All
                                 .select_pseudo All
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
                                         li.select_item.body_row(data-select-item) All#{i}
                         .col-2
                             label.label(for='input_1')
-                                .panel_subtitle Processors Transaction ID
+                                span.panel_subtitle Processors Transaction ID
                                 input.input(id='input_1' type='text')
                     .row.m-t-xs
                         .col-1
                             label.label(for='input_2')
-                                .panel_subtitle Date From
+                                span.panel_subtitle Date From
                                 input.input(id='input_2' type='text' placeholder='From')
                         .col-1
                             label.label(for='input_3')
-                                .panel_subtitle Date To
+                                span.panel_subtitle Date To
                                 input.input(id='input_3' type='text' placeholder='To')
                         .col-2
                             label.label(for='input_4')
-                                .panel_subtitle From Amount
+                                span.panel_subtitle From Amount
                                 input.input(id='input_4' type='text' placeholder='From')
                         .col-2
                             label.label(for='input_5')
-                                .panel_subtitle To Amount
+                                span.panel_subtitle To Amount
                                 input.input(id='input_5' type='text' placeholder='To')
                         .col-2
                             label.label(for='input_6')
-                                .panel_subtitle Order ID
+                                span.panel_subtitle Order ID
                                 input.input(id='input_6' type='text' placeholder='')
                     .row.m-t-md
                         .col-1
                             div.label(data-select)
                                 .panel_subtitle Page Size
                                 select.select
-                                    option(selected)
+                                    option(selected) 25
                                 .select_pseudo 25
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
                                         li.select_item.body_row(data-select-item) #{i+25}
                         .col-1
-                            label.label(for='input_7')
-                                .panel_subtitle Page
-                                .input_pagination_b
+                            .label
+                                span.panel_subtitle Page
+                                span.input_pagination_b
                                     button.input_pagination.input_pagination__prev
-                                    input.input.input__paginat(id='input_7' type='text' placeholder='12')
+                                    input.input.input__paginat(type='text' placeholder='12')
                                     button.input_pagination.input_pagination__next
                         .button_right_b.m-t-sm
                             button.button.button__big.button__grey Search
@@ -121,4 +121,4 @@ html(lang='en')
                                                 div 07/08/2015
                                                 .text-nowrap.m-t-xs 05:40:43 AM
 
-    include includes/blocks/scripts
+        include includes/blocks/scripts

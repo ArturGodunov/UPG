@@ -15,20 +15,20 @@ html(lang='en')
                     .row.m-t
                         .col-2
                             label.label(for='input_1')
-                                .panel_subtitle Company Name
+                                span.panel_subtitle Company Name
                                 input.input(id='input_1' type='text' placeholder='Perfectosoft, LLC')
                         .col-2
                             label.label(for='input_2')
-                                .panel_subtitle Issue Date
+                                span.panel_subtitle Issue Date
                                 input.input(id='input_2' type='text' placeholder='7/7/2015  01:39:16PM')
                     .row.m-t
                         .col-2
                             label.label(for='input_3')
-                                .panel_subtitle Product Version
+                                span.panel_subtitle Product Version
                                 input.input(id='input_3' type='text' placeholder='1.0.0.1')
                         .col-2
                             label.label(for='input_4')
-                                .panel_subtitle Expiration Date
+                                span.panel_subtitle Expiration Date
                                 input.input(id='input_4' type='text' placeholder='8/6/2015  01:39:16PM')
 
         block transactions
@@ -37,4 +37,4 @@ html(lang='en')
                     .wrapper
                         button.button.button__middle.button__grey RENEW License
 
-    include includes/blocks/scripts
+        include includes/blocks/scripts

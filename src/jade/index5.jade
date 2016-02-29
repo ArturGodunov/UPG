@@ -17,7 +17,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Page Size
                                 select.select
-                                    option(selected)
+                                    option(selected) 25
                                 .select_pseudo 25
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -26,7 +26,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Page
                                 select.select
-                                    option(selected)
+                                    option(selected) 1
                                 .select_pseudo 1
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -35,14 +35,14 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Severity Type
                                 select.select
-                                    option(selected)
+                                    option(selected) All
                                 .select_pseudo All
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
                                         li.select_item.body_row(data-select-item) All#{i}
                         .col-1
                             label.label(for='input_1')
-                                .panel_subtitle Page
+                                span.panel_subtitle Page
                                 input.input.input__disabled(id='input_1' type='text' disabled='disabled')
 
         block error_log
@@ -79,4 +79,4 @@ html(lang='en')
                                         .slider_col
                                             .table_text w3wp.exe
 
-    include includes/blocks/scripts
+        include includes/blocks/scripts

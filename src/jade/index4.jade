@@ -17,7 +17,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Configuration Set
                                 select.select
-                                    option(selected)
+                                    option(selected) Sandbox
                                 .select_pseudo Sandbox
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -26,7 +26,7 @@ html(lang='en')
                             div.label(data-select)
                                 .panel_subtitle Application Area
                                 select.select
-                                    option(selected)
+                                    option(selected) Gateway
                                 .select_pseudo Gateway
                                 ul.select_list
                                     - for (var i=0; i < 5; i++)
@@ -61,14 +61,14 @@ html(lang='en')
                                             input.input.input__table(type='text')
                                             label.label.table_text.m-t-sm.text-left
                                                 input.checkbox(type='checkbox')
-                                                .checkbox_img.checkbox_img__small
+                                                span.checkbox_img.checkbox_img__small
                                                 span.checkbox_label Show
                                         .slider_col
                                             .table_text(data-text-overflow data-tooltip-string title='Perfectosoft\\AddInModel\\Processor#{i}') Perfectosoft\AddInModel\Processor#{i}
                                         .slider_col
                                             label.label
                                                 input.checkbox(type='checkbox')
-                                                .checkbox_img
+                                                span.checkbox_img
                                         .slider_col
                                             .table_text String
                                         .slider_col
@@ -82,4 +82,4 @@ html(lang='en')
                                     button.button.button__middle.button__transparent cancel
                                     button.button.button__middle.button__grey.m-l-xs safe
 
-    include includes/blocks/scripts
+        include includes/blocks/scripts
