@@ -1401,7 +1401,7 @@ body {
 ** SLIDER
 */
 .slider {
-  position: fixed;
+  position: absolute;
   top: 158px;
   right: 0;
   width: 60vw;
@@ -1685,11 +1685,6 @@ body {
   clear: both;
 }
 
-.ui-helper-clearfix {
-  min-height: 0;
-  /* support: IE7 */
-}
-
 .ui-helper-zfix {
   width: 100%;
   height: 100%;
@@ -1697,8 +1692,6 @@ body {
   left: 0;
   position: absolute;
   opacity: 0;
-  filter: Alpha(Opacity=0);
-  /* support: IE8 */
 }
 
 .ui-front {
