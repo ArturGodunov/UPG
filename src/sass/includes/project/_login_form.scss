@@ -114,18 +114,13 @@
       background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyOCAxOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjggMTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiMzOUEyMDAiIHBvaW50cz0iMjgsMCA5Ljk4NCwxNy45NjUgLTAuMDM2LDggNC41NDcsOCAxMC4wNzUsMTMuMDU0IDIzLjE3NiwwICIvPjwvc3ZnPg==");
       background-repeat: no-repeat;
       background-position: 50%;
-      background-size: 28px 18px;
+      background-size: 88% 56%;
     }
   }
   @media (max-width: 1600px) {
     .checkbox_img {
       width: 24px;
       height: 24px;
-    }
-    .checkbox_check{
-      &:checked + .checkbox_img{
-        background-size: 20px 13px;
-      }
     }
   }
 
@@ -152,12 +147,12 @@
     }
   }
 
-  .hover,
-  .focus{
+  .hover{
     transition: .4s;
     box-shadow: 0 0 10px 1px rgba(255,182,0,0);
     &:hover,
-    &:focus{
+    &:focus,
+    &:active{
       box-shadow: 0 0 10px 1px rgba(255,182,0,0.5);
     }
     &.hover__checkbox{

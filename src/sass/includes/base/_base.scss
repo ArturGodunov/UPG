@@ -122,6 +122,8 @@ body{
   font-family: open_sanssemibold, sans-serif;
   height: 32px;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
   transition: .3s;
   cursor: pointer;
   &.button__big{
@@ -154,13 +156,14 @@ body{
     border: 1px solid #9d9d9d;
     color: #9d9d9d;
   }
+  //don't use tag button - iPad, Mac overflow:hidden
   &.button__edit,
   &.button__delete{
     color: #787878;
-    padding-top: 32px;
-    line-height: 2;
     font-size: 12px;
     text-transform: none;
+    padding-top: 32px;
+    line-height: 2;
     background-repeat: no-repeat;
     background-position: 50%;
   }
