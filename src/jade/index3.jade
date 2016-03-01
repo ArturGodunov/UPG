@@ -1,19 +1,11 @@
-include includes/vars
-include includes/mixins
+extends index0
 
-doctype html
-html(lang='en')
-    include includes/blocks/head
-    body.footer(data-welcome)
+block main
 
-        include includes/blocks/header
+    include includes/blocks/panel_top
 
-        include includes/blocks/panel_top
+    include includes/blocks/rules
 
-        include includes/blocks/rules
+    include includes/blocks/slider_1
 
-        include includes/blocks/slider_1
-
-        include includes/blocks/slider_2
-
-        include includes/blocks/scripts
+    include includes/blocks/slider_2

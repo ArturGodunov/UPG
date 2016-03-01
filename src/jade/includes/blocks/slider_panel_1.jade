@@ -5,27 +5,16 @@ block slider_panel_1
             .col-2
                h3.panel_title.panel_title__dark configuration
             .col-2
-               a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href='' data-slide-open='2') Code Mapping
+               a.panel_subtitle.panel_subtitle__dark.panel_subtitle__link(href='' data-slide-open='2' title='Code Mapping') Code Mapping
          .row.m-t-md
             .col-2
                h5.panel_subtitle.panel_subtitle__dark.m-t-lg Authorize.net
             .col-2
-               div.label(data-select)
-                  .panel_subtitle Configuration Set
-                  select.select
-                     option(selected) Sandbox
-                  .select_pseudo Sandbox
-                  ul.select_list
-                     - for (var i=0; i < 5; i++)
-                        li.select_item.body_row(data-select-item) Sandbox#{i}
+               +selectSuper('Configuration Set', 'Sandbox')
             .col-2
-               label.label(for='input_1')
-                  span.panel_subtitle Transaction Fixed Fee
-                  input.input(id='input_1' placeholder='0.30' type='text')
+               +labelInput(1, 'Transaction Fixed Fee', '0.30')
             .col-2
-               label.label(for='input_2')
-                  span.panel_subtitle Transaction Percentage Fee
-                  input.input(id='input_2' placeholder='2.90' type='text')
+               +labelInput(2, 'Transaction Percentage Fee', '2.90')
             .right
                .pagination Showing <span class="pagination_show">1-4</span> of <span class="pagination_all">20</span> items.
                .pagination_block

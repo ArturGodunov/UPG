@@ -25,15 +25,15 @@ block rules
    section.rules_description.col-6
       .wrapper.wrapper__half_right.clr
          h2.rules_title Rule #1
-         button.button.button__small.button__yellow.button__edit(data-slide-open='1') Edit
-         button.button.button__small.button__red.button__delete.m-l-sm Delete
+         button.button.button__small.button__yellow.button__edit(data-slide-open='1' title='Edit') Edit
+         button.button.button__small.button__red.button__delete.m-l-sm(title='Delete') Delete
 
          h5.rules_subtitle Rule Name
          .rules_name Best Profit
          .right
             .rules_status Active<br>Status
-            button.button.button__small.button__yellow.m-r-n-inlblc on
-            button.button.button__small.button__grey.button__disabled off
+            button.button.button__small.button__yellow.m-r-n-inlblc(title='On') on
+            button.button.button__small.button__grey.button__disabled(title='Off') off
 
          h5.rules_subtitle Creator Name
          .rules_creator Patrick Blacknight
@@ -65,5 +65,5 @@ block rules
                            .arrow.arrow__up
                            .arrow.arrow__down
             .text-right.m-t.m-b-xl
-               button.button.button__middle.button__transparent cancel
-               button.button.button__middle.button__yellow.m-l-xs safe
+               button.button.button__middle.button__transparent(title='Cancel') cancel
+               button.button.button__middle.button__yellow.m-l-xs(title='Safe') safe

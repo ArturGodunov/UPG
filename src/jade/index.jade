@@ -1,13 +1,15 @@
-include includes/vars
-include includes/mixins
+extends index0
 
-doctype html
-html(lang='en')
-    include includes/blocks/head
-    style.
-        body { padding-top: 20px; }
-        a { color: #ffb600; line-height: 2;}
-        a:hover { text-decoration: none; }
+block head
+    head
+        include includes/blocks/head
+
+        style.
+            body { padding-top: 20px; }
+            a { color: #ffb600; line-height: 2;}
+            a:hover { text-decoration: none; }
+
+block body
     body
         .wrapper
             div: a(href='index1.html') Login
@@ -26,6 +28,7 @@ html(lang='en')
             div: a(data-popup-big href) Popup Processor Details
 
         include includes/blocks/scripts
+
         script.
             $('[data-popup-welcome]').colorbox({
                 href:'popup1.html',
