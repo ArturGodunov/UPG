@@ -40,12 +40,23 @@ $(document).ready(function () {
      * don't use tag 'label' - 2 click
      * */
     $('[data-select]').on('click', function() {
-        $(this).find('.select_list').toggleClass('show');
+        var list = $(this).find('.select_list');
+        list.toggleClass('show');
+        $('.select_list').not(list).removeClass('show'); /** Close not current selects */
     });
     $('[data-select-item]').on('click', function() {
-        var text = $(this).text();
-        $(this).parents('.label').find('[selected]').val(text);
-        $(this).parents('.label').find('.select_pseudo').text(text);
+        var text = $(this).text(),
+            label = $(this).parents('.label');
+        label.find('[selected]').val(text);
+        label.find('.select_pseudo').text(text);
+    });
+    /** Closing selects after clicking somewhere */
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('[data-select]').is('[data-select]')) {
+            $('.select_list').each(function() {
+                $(this).removeClass('show');
+            });
+        }
     });
 
     /**
@@ -59,8 +70,9 @@ $(document).ready(function () {
     $('[data-slide-close]').on('click', function() {
         $('[data-slide]').removeClass('show');
     });
+    /** Closing slides after pressing Esc */
     $(document).keydown(function(e) {
-        if (e.keyCode == 27) { /** Press Esc*/
+        if (e.keyCode == 27) {
             $('[data-slide]').removeClass('show');
         }
     });
@@ -101,6 +113,7 @@ $(document).ready(function () {
                 $("<div>").addClass("arrow").appendTo(this);
             }
         },
+        items: '[data-tooltip-block]',
         content:
         '<div class="tooltip_content clr">' +
         '<div class="tooltip_col_1">' +
@@ -126,7 +139,16 @@ $(document).ready(function () {
         '</div>'
     });
 
+    /** Closing tooltips after touch somewhere */
+    $(document).on('touchstart', function() {
+        $('[data-tooltip-string], [data-tooltip-block]').tooltip('close');
+    });
 
-
-
+    /**
+     * @todo Prevent scroll.
+     * */
+    //$(document).on('scroll', '[data-scroll]', function(e) {
+    //    console.log(e);
+    //    $('[data-prevent-scroll]').addClass('prevent_scroll');
+    //});
 });

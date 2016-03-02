@@ -265,6 +265,7 @@ body{
   cursor: pointer;
   background: #fff;
   z-index: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   &.show{
     display: block;
   }
@@ -377,6 +378,10 @@ body{
   padding: 15px 0;
   text-align: right;
   background: #fff;
+}
+
+.prevent_scroll{
+  overflow-y: hidden !important;
 }
 /*
 ** END COMMON
