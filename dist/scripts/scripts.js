@@ -51,7 +51,7 @@ $(document).ready(function () {
         label.find('.select_pseudo').text(text);
     });
     /** Closing selects after clicking somewhere */
-    $(document).on('click', function(e) {
+    $(document).on('click touchstart', function(e) {
         if (!$(e.target).closest('[data-select]').is('[data-select]')) {
             $('.select_list').each(function() {
                 $(this).removeClass('show');
@@ -145,10 +145,14 @@ $(document).ready(function () {
     });
 
     /**
-     * @todo Prevent scroll.
+     * Prevent scroll
      * */
-    //$(document).on('scroll', '[data-scroll]', function(e) {
-    //    console.log(e);
-    //    $('[data-prevent-scroll]').addClass('prevent_scroll');
-    //});
+    $('[data-scroll]').hover(
+        function() {
+            $('[data-prevent-scroll]').addClass('prevent_scroll');
+        },
+        function() {
+            $('[data-prevent-scroll]').removeClass('prevent_scroll');
+        }
+    );
 });

@@ -52,14 +52,14 @@ block rules
             .clr
                .rules_payment.rules_payment__available
                   .rules_payment_title.rules_payment_title__orange Available
-                  ul.rules_payment_list
+                  ul.rules_payment_list(data-scroll)
                      - for (var i=0; i < 12; i++)
                         li.rules_payment_item.tick.button_activation Authorize.net
                .rules_payment_arrow.rules_payment_arrow__right
                .rules_payment_arrow.rules_payment_arrow__left
                .rules_payment.rules_payment__assigned
                   .rules_payment_title.rules_payment_title__orange Assigned
-                  ul.rules_payment_list.rules_payment_list__numeric
+                  ul.rules_payment_list.rules_payment_list__numeric(data-scroll)
                      - for (var i=0; i < 13; i++)
                         li.rules_payment_item.button_activation(class= i == 0 ? 'active' : '') Authorize.net
                            .arrow.arrow__up
