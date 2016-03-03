@@ -906,6 +906,18 @@ body {
 .panel_top.panel_top__bottom_bg {
   padding-bottom: 30px;
 }
+.panel_top.panel_top__long_bg:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100px;
+  background: #bdc6c9;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.4);
+  margin-left: -4px;
+}
 
 .panel_title {
   text-transform: uppercase;
@@ -1414,7 +1426,7 @@ body {
   width: 60vw;
   min-width: 1000px;
   height: calc(100vh - 235px);
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   background: #fff;
   z-index: 1;
