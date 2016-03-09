@@ -1,6 +1,7 @@
-mixin selectSuper(title, optionText, placeholder)
+mixin selectSuper(title, optionText, placeholder, displayTitle)
     div.label(data-select)
-        .panel_subtitle= title
+        if (displayTitle != false)
+            .panel_subtitle= title
         select.select
             option(selected)= optionText
         if (placeholder != false)

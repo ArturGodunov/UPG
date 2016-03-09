@@ -110,6 +110,10 @@ body{
 }
 .col-6{
   width: 50%;
+  &.col-6__block{
+    float: none;
+    display: inline-block;
+  }
 }
 .col-offset-2{
   margin-left: calc(16.66% + 40px);
@@ -209,7 +213,7 @@ body{
   cursor: pointer;
   .select_pseudo,
   .input{
-    margin-top: 7px;
+    //margin-top: 7px;
   }
 }
 
@@ -228,6 +232,7 @@ body{
   font-family: open_sanssemibold, sans-serif;
   font-variant: small-caps;
   width: 100%;
+  text-align: left;
 }
 .select_pseudo{
   cursor: pointer;
@@ -242,7 +247,7 @@ body{
     top: 0;
     right: 0;
     width: 24px;
-    height: 24px;
+    height: 100%;
     background: #dcdcdc;
   }
   &:after{
@@ -318,6 +323,10 @@ body{
   background: #fff;
   border: 1px solid #c7c7c7;
   padding: 3px 6px;
+  &.textarea__grey{
+    background-color: #f3f3f3;
+    border: none;
+  }
 }
 .checkbox{
   display: none;
@@ -371,6 +380,9 @@ body{
   }
   &.main_content__empty{
     height: calc(100vh - 359px);
+  }
+  &.main_content__xs{
+    height: calc(100vh - 216px);
   }
 }
 
