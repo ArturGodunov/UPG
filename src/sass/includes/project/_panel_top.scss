@@ -40,6 +40,7 @@
   position: relative;
   &.panel_title__light{
     color: #fff;
+    z-index: -1;
   }
   &.panel_title__dark{
     display: inline-block;
