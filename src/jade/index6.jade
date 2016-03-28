@@ -47,7 +47,7 @@ block main
             section.slider_content.slider_content__transactions
                 .head.head__light
                     .wrapper
-                        each val in [['Id','Order'],['code','Authorization'],['Authorization','Transaction ID'],['Processor','Title'],['Type','Title'],['Status','Title'],['Amount','Сurrency ($)'],['Date','Date/Time']]
+                        each val in [['Action','View'],['Id','Order'],['code','Authorization'],['Authorization','Transaction ID'],['Processor','Title'],['Type','Title'],['Status','Title'],['Amount','Сurrency ($)'],['Date','Date/Time']]
                             .slider_col
                                 .head_text.head_text__title= val[0]
                                 .head_text.head_text__subtitle= val[1]
@@ -56,6 +56,8 @@ block main
                         - for (var i=0; i < 9; i++)
                             .body_row.body_row__padding_sm.body_row__error
                                 .wrapper.flex
+                                    .slider_col
+                                        .action_eye(class = i == 3 ? 'action_eye__disabled' : '')
                                     .slider_col
                                         a.table_text.tooltip_link(data-tooltip-block) 182345123452345678
                                     .slider_col
